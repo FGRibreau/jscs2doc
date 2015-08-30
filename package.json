@@ -4,12 +4,14 @@
   "description": "Convert JSCS convention to a human readable README",
   "main": "index.js",
   "bin": {
-    "jscs2doc": "./index.js"
+    "jscs2doc": "./bin/jscs2doc",
+    "jscsrc2doc": "./bin/jscsrc2doc"
   },
   "keywords": [
     "jscs",
     "code-style",
-    "documentation"
+    "documentation",
+    "jscrsrc"
   ],
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
