@@ -1,12 +1,16 @@
 {
   "name": "jscs2doc",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Convert JSCS convention to a human readable README",
   "main": "index.js",
   "bin": {
     "jscs2doc": "./index.js"
   },
-  "keywords": ["jscs", "code-style", "documentation"],
+  "keywords": [
+    "jscs",
+    "code-style",
+    "documentation"
+  ],
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
