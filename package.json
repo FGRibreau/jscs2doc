@@ -1,6 +1,6 @@
 {
   "name": "jscs2doc",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Convert JSCS convention to a human readable README",
   "main": "index.js",
   "bin": {
