@@ -1,0 +1,36 @@
+{
+  "name": "jscs2doc",
+  "version": "0.0.1",
+  "description": "Convert JSCS convention to a human readable README",
+  "main": "index.js",
+  "bin": {
+    "jscs2doc": "./index.js"
+  },
+  "keywords": ["jscs", "code-style", "documentation"],
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/FGRibreau/jscs2doc.git"
+  },
+  "author": "Francois-Guillaume Ribreau <npm@fgribreau.com> (http://fgribreau.com/)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/FGRibreau/jscs2doc/issues"
+  },
+  "homepage": "https://github.com/FGRibreau/jscs2doc",
+  "dependencies": {
+    "babel": "^5.8.23",
+    "highlight.js": "^8.7.0",
+    "jscs": "^2.1.1",
+    "lodash": "^3.10.1",
+    "marked": "^0.3.5",
+    "marked-toc": "^0.3.0",
+    "when": "^3.7.3"
+  },
+  "devDependencies": {
+    "chai": "^3.2.0",
+    "mocha": "^2.2.5"
+  }
+}
