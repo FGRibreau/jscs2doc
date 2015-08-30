@@ -9,3 +9,6 @@ npm install jscs2doc -g
 # jscs2doc [jscsrc file] [documentation output]
 jscs2doc ./.jscsrc README.html && open README.html
 ```
+
+# [Output example](/examples) (alpha)
+
