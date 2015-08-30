@@ -1,6 +1,6 @@
 # jscs2doc (work in progress)
 
-Convert JSCS conventions to a human readable format.
+Convert .jscsrc (javascript code-style configuration) to a human readable format.
 
 ## Usage
 
