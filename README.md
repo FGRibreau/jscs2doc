@@ -1,4 +1,4 @@
-# jscs2doc (work in progress)
+# jscs2doc (work in progress) [![Deps](https://david-dm.org/FGRibreau/jscs2doc.png)](https://david-dm.org/FGRibreau/jscs2doc) [![Version](http://badge.fury.io/js/jscs2doc.png)](https://david-dm.org/FGRibreau/jscs2doc)  [![Downloads](http://img.shields.io/npm/dm/jscs2doc.svg)](https://www.npmjs.com/package/jscs2doc)
 
 Convert .jscsrc (javascript code-style configuration) to a human readable format.
 
