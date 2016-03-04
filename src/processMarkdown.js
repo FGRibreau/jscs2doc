@@ -1,4 +1,5 @@
 // extracted from https://github.com/jscs-dev/jscs-dev.github.io/blob/2ce5a18dc2ad61c5ebf15586118fcb2291750bf1/app/lib/processMarkdown.jsx
+
 import markedToc from 'marked-toc';
 import {
     default as marked, Renderer

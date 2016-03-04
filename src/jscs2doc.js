@@ -4,10 +4,10 @@ const _ = require('lodash');
 const when = require('when');
 const ENABLED = 'enabled';
 const DISABLED = 'disabled';
-const jscsRoot = path.resolve(__dirname, './node_modules/jscs');
+const jscsRoot = path.resolve(__dirname, '../node_modules/jscs');
 
-const fs = require('./helpers/when-fs');
-const processMarkdown = require('./helpers/processMarkdown');
+const fs = require('./when-fs');
+const processMarkdown = require('./processMarkdown');
 
 const config = {
   githubOrganization: 'jscs',
