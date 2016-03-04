@@ -3,7 +3,7 @@
   "version": "0.0.6",
   "description": "Convert .jscsrc (javascript code-style configuration) to a human readable format",
   "bin": {
-    "jscs2doc": "./dist/bin.js"
+    "jscs2doc": "./bin/jscs2doc"
   },
   "keywords": [
     "jscs",
