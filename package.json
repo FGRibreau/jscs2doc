@@ -13,6 +13,7 @@
   ],
   "scripts": {
     "build": "babel src --plugins add-module-exports -d dist",
+    "pre-publish": "npm run build && git add dist/* && git commit -m 'feat(dist)'",
     "start": "./dist/bin"
   },
   "repository": {
