@@ -5,7 +5,7 @@ var _ = require('lodash');
 var when = require('when');
 var ENABLED = 'enabled';
 var DISABLED = 'disabled';
-var jscsRoot = path.resolve(__dirname, '../node_modules/jscs');
+var jscsRoot = path.resolve(require.resolve('jscs').split('jscs/')[0], './jscs');
 
 var fs = require('./when-fs');
 var processMarkdown = require('./processMarkdown');
