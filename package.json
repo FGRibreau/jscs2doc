@@ -4,8 +4,7 @@
   "description": "Convert .jscsrc (javascript code-style configuration) to a human readable format",
   "main": "index.js",
   "bin": {
-    "jscs2doc": "./bin/jscs2doc",
-    "jscsrc2doc": "./bin/jscsrc2doc"
+    "jscs2doc": "./bin/jscs2doc"
   },
   "keywords": [
     "jscs",
