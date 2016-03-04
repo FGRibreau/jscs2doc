@@ -1,6 +1,6 @@
 {
   "name": "jscs2doc",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Convert .jscsrc (javascript code-style configuration) to a human readable format",
   "main": "index.js",
   "bin": {
