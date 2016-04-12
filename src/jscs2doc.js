@@ -80,7 +80,7 @@ function readFileAsync(filename) {
   });
 }
 
-var CR = '\n\n';
+const CR = '\n\n';
 /**
  * [description]
  * @param  {string} jscsrc jscsrc file path
@@ -112,13 +112,25 @@ module.exports = (jscsrcPath, readmePath) => {
 ## ${rule.name}
 ${printCurrentValue(rule, _.has(jscsrc, rule.name), jscsrc[rule.name])}
 ${rule.description}
-
 `;
       }).join(CR);
     }
 
+    function wrapInTemplate(html){
+      return `
+        <html>
+          <head>
+            <link rel="stylesheet" href="http://jscs.info/assets/bundle.css" media="screen" title="no title" charset="utf-8" />
+          </head>
+          <body>
+          ${html}
+          </body>
+        </html>
+      `;
+    }
+
     // @todo handle another templates
-    fs.writeFileAsync(readmePath, processMarkdown(`
+    fs.writeFileAsync(readmePath, wrapInTemplate(processMarkdown(`
 <!-- toc -->
 
 ----------------------
@@ -129,6 +141,6 @@ ${rulesToText(groups.enabled)}
 # Disabled rules
 
 ${rulesToText(groups.disabled)}
-`), 'utf8');
+`)), 'utf8');
   });
 }

@@ -106,11 +106,15 @@ module.exports = function (jscsrcPath, readmePath) {
     function rulesToText(rules) {
       return rules.map(function ruleToText(rule) {
         // @todo handle another template
-        return '\n## ' + rule.name + '\n' + printCurrentValue(rule, _.has(jscsrc, rule.name), jscsrc[rule.name]) + '\n' + rule.description + '\n\n';
+        return '\n## ' + rule.name + '\n' + printCurrentValue(rule, _.has(jscsrc, rule.name), jscsrc[rule.name]) + '\n' + rule.description + '\n';
       }).join(CR);
     }
 
+    function wrapInTemplate(html) {
+      return '\n        <html>\n          <head>\n            <link rel="stylesheet" href="http://jscs.info/assets/bundle.css" media="screen" title="no title" charset="utf-8" />\n          </head>\n          <body>\n          ' + html + '\n          </body>\n        </html>\n      ';
+    }
+
     // @todo handle another templates
-    fs.writeFileAsync(readmePath, processMarkdown('\n<!-- toc -->\n\n----------------------\n# Enabled rules\n\n' + rulesToText(groups.enabled) + '\n\n# Disabled rules\n\n' + rulesToText(groups.disabled) + '\n'), 'utf8');
+    fs.writeFileAsync(readmePath, wrapInTemplate(processMarkdown('\n<!-- toc -->\n\n----------------------\n# Enabled rules\n\n' + rulesToText(groups.enabled) + '\n\n# Disabled rules\n\n' + rulesToText(groups.disabled) + '\n')), 'utf8');
   });
 };
