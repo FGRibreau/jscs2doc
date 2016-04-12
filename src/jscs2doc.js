@@ -118,14 +118,14 @@ ${rule.description}
 
     function wrapInTemplate(html){
       return `
-        <html>
-          <head>
-            <link rel="stylesheet" href="http://jscs.info/assets/bundle.css" media="screen" title="no title" charset="utf-8" />
-          </head>
-          <body>
-          ${html}
-          </body>
-        </html>
+<html>
+<head>
+<link rel="stylesheet" href="http://jscs.info/assets/bundle.css" media="screen" title="no title" charset="utf-8" />
+</head>
+<body>
+${html}
+</body>
+</html>
       `;
     }
 

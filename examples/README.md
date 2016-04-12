@@ -1,10 +1,10 @@
 
-        <html>
-          <head>
-            <link rel="stylesheet" href="http://jscs.info/assets/bundle.css" media="screen" title="no title" charset="utf-8" />
-          </head>
-          <body>
-          <div class="toc"><div class="toc-header">Table of contents:</div>
+<html>
+<head>
+<link rel="stylesheet" href="http://jscs.info/assets/bundle.css" media="screen" title="no title" charset="utf-8" />
+</head>
+<body>
+<div class="toc"><div class="toc-header">Table of contents:</div>
 <ul>
 <li><a href="#enabled-rules">Enabled rules</a></li>
 <li><a href="#disabled-rules">Disabled rules</a></li>
@@ -6005,6 +6005,6 @@ number or array fills more than one line.</p>
 <pre><code class="lang-js"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">a</span>(<span class="hljs-params">b , c</span>) </span>{}
 </code></pre>
 
-          </body>
-        </html>
+</body>
+</html>
       

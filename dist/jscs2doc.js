@@ -111,7 +111,7 @@ module.exports = function (jscsrcPath, readmePath) {
     }
 
     function wrapInTemplate(html) {
-      return '\n        <html>\n          <head>\n            <link rel="stylesheet" href="http://jscs.info/assets/bundle.css" media="screen" title="no title" charset="utf-8" />\n          </head>\n          <body>\n          ' + html + '\n          </body>\n        </html>\n      ';
+      return '\n<html>\n<head>\n<link rel="stylesheet" href="http://jscs.info/assets/bundle.css" media="screen" title="no title" charset="utf-8" />\n</head>\n<body>\n' + html + '\n</body>\n</html>\n      ';
     }
 
     // @todo handle another templates
