@@ -1591,11 +1591,11 @@ the final report</li>
 <pre><code class="lang-js"><span class="hljs-string">"validateLineBreaks"</span>: <span class="hljs-string">"LF"</span>
 </code></pre>
 <h5 id="valid-for-mode-lf">Valid for mode <code>&quot;LF&quot;</code></h5>
-<pre><code class="lang-js"><span class="hljs-keyword">var</span> x = <span class="hljs-number">1</span>;<span class="xml"><span class="hljs-tag">&lt;<span class="hljs-title">LF</span>&gt;</span>
+<pre><code class="lang-js"><span class="hljs-keyword">var</span> x = <span class="hljs-number">1</span>;<span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">LF</span>&gt;</span>
 x++;</span>
 </code></pre>
 <h5 id="invalid-for-mode-lf">Invalid for mode <code>&quot;LF&quot;</code></h5>
-<pre><code class="lang-js"><span class="hljs-keyword">var</span> x = <span class="hljs-number">1</span>;<span class="xml"><span class="hljs-tag">&lt;<span class="hljs-title">CRLF</span>&gt;</span>
+<pre><code class="lang-js"><span class="hljs-keyword">var</span> x = <span class="hljs-number">1</span>;<span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">CRLF</span>&gt;</span>
 x++;</span>
 </code></pre>
 <h2 id="validatequotemarks">validateQuoteMarks</h2>
@@ -1867,7 +1867,7 @@ object.foo = <span class="hljs-number">3</span>;
 <pre><code class="lang-js">x = <span class="hljs-built_in">Boolean</span>(y);
 x = <span class="hljs-built_in">Number</span>(y);
 x = <span class="hljs-built_in">String</span>(y);
-x = s.indexOf(<span class="hljs-string">'.'</span>) !== -<span class="hljs-number">1</span>;
+x = s.indexOf(<span class="hljs-string">'.'</span>) !== <span class="hljs-number">-1</span>;
 </code></pre>
 <h5 id="invalid">Invalid</h5>
 <pre><code class="lang-js">x = !!y;
@@ -2327,11 +2327,11 @@ loop1:
 <pre><code class="lang-js"><span class="hljs-string">"disallowPaddingNewLinesAfterUseStrict"</span>: <span class="hljs-literal">true</span>
 </code></pre>
 <h5 id="valid">Valid</h5>
-<pre><code class="lang-js"><span class="hljs-pi">'use strict'</span>;
+<pre><code class="lang-js"><span class="hljs-meta">'use strict'</span>;
 <span class="hljs-comment">// code</span>
 </code></pre>
 <h5 id="invalid">Invalid</h5>
-<pre><code class="lang-js"><span class="hljs-pi">'use strict'</span>;
+<pre><code class="lang-js"><span class="hljs-meta">'use strict'</span>;
 
 <span class="hljs-comment">// code</span>
 </code></pre>
@@ -3200,13 +3200,13 @@ ignores closing brackets in a row.</p>
 <p>Validate jsdoc comments</p>
 <h2 id="usage">Usage</h2>
 <pre><code class="lang-json">{
-    "<span class="hljs-attribute">jsDoc</span>": <span class="hljs-value">{
-        "<span class="hljs-attribute">checkAnnotations</span>": <span class="hljs-value"><span class="hljs-string">"closurecompiler"</span></span>,
-        "<span class="hljs-attribute">checkTypes</span>": <span class="hljs-value"><span class="hljs-string">"strictNativeCase"</span></span>,
-        "<span class="hljs-attribute">enforceExistence</span>": <span class="hljs-value"><span class="hljs-string">"exceptExports"</span>
+    <span class="hljs-attr">"jsDoc"</span>: {
+        <span class="hljs-attr">"checkAnnotations"</span>: <span class="hljs-string">"closurecompiler"</span>,
+        <span class="hljs-attr">"checkTypes"</span>: <span class="hljs-string">"strictNativeCase"</span>,
+        <span class="hljs-attr">"enforceExistence"</span>: <span class="hljs-string">"exceptExports"</span>
         ...
-    </span>}
-</span>}
+    }
+}
 </code></pre>
 <h2 id="rules">Rules</h2>
 <h3 id="checkannotations">checkAnnotations</h3>
@@ -4776,12 +4776,12 @@ foo({a:{b:<span class="hljs-number">1</span>}});
 <pre><code class="lang-js"><span class="hljs-string">"requirePaddingNewLinesAfterUseStrict"</span>: <span class="hljs-literal">true</span>
 </code></pre>
 <h5 id="valid">Valid</h5>
-<pre><code class="lang-js"><span class="hljs-pi">'use strict'</span>;
+<pre><code class="lang-js"><span class="hljs-meta">'use strict'</span>;
 
 <span class="hljs-comment">// code</span>
 </code></pre>
 <h5 id="invalid">Invalid</h5>
-<pre><code class="lang-js"><span class="hljs-pi">'use strict'</span>;
+<pre><code class="lang-js"><span class="hljs-meta">'use strict'</span>;
 <span class="hljs-comment">// code</span>
 </code></pre>
 <h2 id="requirepaddingnewlinesbeforeexport">requirePaddingNewLinesBeforeExport</h2>
@@ -5755,7 +5755,7 @@ instance.method.apply(instance, args);
 </code></pre>
 <pre><code class="lang-js"><span class="hljs-keyword">var</span> w = <span class="hljs-number">1</span>;
 <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">x</span>(<span class="hljs-params"></span>) </span>{
-<span class="hljs-pi"> "use strict"</span>;
+<span class="hljs-meta"> "use strict"</span>;
  <span class="hljs-keyword">var</span> y;
 };
 </code></pre>
