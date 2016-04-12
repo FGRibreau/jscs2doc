@@ -1,29 +1,19 @@
-// extracted from https://github.com/jscs-dev/jscs-dev.github.io/blob/2ce5a18dc2ad61c5ebf15586118fcb2291750bf1/app/lib/processMarkdown.jsx
-
 import markedToc from 'marked-toc';
-import {
-    default as marked, Renderer
-}
-from 'marked';
+import {default as marked, Renderer} from 'marked';
 import highlightJs from 'highlight.js';
 
 marked.setOptions({
-    highlight: function (code, lang) {
+    highlight: function(code, lang) {
         return lang ? highlightJs.highlight(lang, code).value : code;
     }
 });
 
 export default function processMarkdown(markdown, callback) {
     var toc = '\n<!--start_toc-->\n\n' +
-        markedToc(markdown, {
-            maxDepth: 2,
-            slugify: generateHeaderAnchor
-        }) +
+        markedToc(markdown, {maxDepth: 1, slugify: generateHeaderAnchor}) +
         '\n\n<!--end_toc-->\n';
-    var html = marked(markdown.replace('<!-- toc -->', toc), {
-        renderer: new RendererReplacement()
-    }, callback);
-    html = html.replace('<!--start_toc-->', '<div class="toc"><div class="toc-header"></div>');
+    var html = marked(markdown.replace('<!-- toc -->', toc), {renderer: new RendererReplacement()}, callback);
+    html = html.replace('<!--start_toc-->', '<div class="toc"><div class="toc-header">Table of contents:</div>');
     html = html.replace('<!--end_toc-->', '</div>');
     return html;
 }

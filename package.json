@@ -8,6 +8,7 @@
   "scripts": {
     "build": "babel src --plugins add-module-exports -d dist",
     "release": "npm run build && git add dist/* && (git commit -m 'feat(dist)' || true)",
+    "update-parser":"curl https://raw.githubusercontent.com/jscs-dev/jscs-dev.github.io/dev/app/lib/processMarkdown.jsx > src/processMarkdown.js",
     "test":"cd examples/ && ../bin/jscs2doc",
     "start": "./bin/jscs2doc"
   },
