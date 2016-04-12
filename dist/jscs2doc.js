@@ -106,12 +106,12 @@ module.exports = function (jscsrcPath, readmePath) {
     function rulesToText(rules) {
       return rules.map(function ruleToText(rule) {
         // @todo handle another template
-        return '\n## ' + rule.name + '\n' + printCurrentValue(rule, _.has(jscsrc, rule.name), jscsrc[rule.name]) + '\n' + rule.description + '\n';
+        return '\n$$RULE_START$$\n## ' + rule.name + '\n' + printCurrentValue(rule, _.has(jscsrc, rule.name), jscsrc[rule.name]) + '\n' + rule.description + '\n$$RULE_END$$\n';
       }).join(CR);
     }
 
     function wrapInTemplate(html) {
-      return '\n<html>\n<head>\n<link rel="stylesheet" href="http://jscs.info/assets/bundle.css" media="screen" title="no title" charset="utf-8" />\n</head>\n<body>\n' + html + '\n</body>\n</html>\n      ';
+      return '\n<html>\n<head>\n<link rel="stylesheet" href="http://jscs.info/assets/bundle.css" media="screen" title="no title" charset="utf-8" />\n</head>\n<body>\n<div class="page__content">\n' + html.replace(/\$\$RULE_START\$\$/g, '<div class="rule"><div class="rule-description markdown">').replace(/\$\$RULE_END\$\$/g, '</div></div>') + '\n</div>\n</body>\n</html>\n      ';
     }
 
     // @todo handle another templates

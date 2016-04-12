@@ -109,9 +109,11 @@ module.exports = (jscsrcPath, readmePath) => {
       return rules.map(function ruleToText(rule) {
         // @todo handle another template
         return `
+$$RULE_START$$
 ## ${rule.name}
 ${printCurrentValue(rule, _.has(jscsrc, rule.name), jscsrc[rule.name])}
 ${rule.description}
+$$RULE_END$$
 `;
       }).join(CR);
     }
@@ -123,7 +125,12 @@ ${rule.description}
 <link rel="stylesheet" href="http://jscs.info/assets/bundle.css" media="screen" title="no title" charset="utf-8" />
 </head>
 <body>
-${html}
+<div class="page__content">
+${html
+    .replace(/\$\$RULE_START\$\$/g, '<div class="rule"><div class="rule-description markdown">')
+    .replace(/\$\$RULE_END\$\$/g, '</div></div>')
+  }
+</div>
 </body>
 </html>
       `;

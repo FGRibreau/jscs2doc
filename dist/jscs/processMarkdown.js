@@ -34,7 +34,7 @@ _marked2.default.setOptions({
 });
 
 function processMarkdown(markdown, callback) {
-    var toc = '\n<!--start_toc-->\n\n' + (0, _markedToc2.default)(markdown, { maxDepth: 1, slugify: generateHeaderAnchor }) + '\n\n<!--end_toc-->\n';
+    var toc = '\n<!--start_toc-->\n\n' + (0, _markedToc2.default)(markdown, { maxDepth: 2, slugify: generateHeaderAnchor }) + '\n\n<!--end_toc-->\n';
     var html = (0, _marked2.default)(markdown.replace('<!-- toc -->', toc), { renderer: new RendererReplacement() }, callback);
     html = html.replace('<!--start_toc-->', '<div class="toc"><div class="toc-header">Table of contents:</div>');
     html = html.replace('<!--end_toc-->', '</div>');

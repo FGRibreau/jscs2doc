@@ -10,7 +10,7 @@ marked.setOptions({
 
 export default function processMarkdown(markdown, callback) {
     var toc = '\n<!--start_toc-->\n\n' +
-        markedToc(markdown, {maxDepth: 1, slugify: generateHeaderAnchor}) +
+        markedToc(markdown, {maxDepth: 2, slugify: generateHeaderAnchor}) +
         '\n\n<!--end_toc-->\n';
     var html = marked(markdown.replace('<!-- toc -->', toc), {renderer: new RendererReplacement()}, callback);
     html = html.replace('<!--start_toc-->', '<div class="toc"><div class="toc-header">Table of contents:</div>');
