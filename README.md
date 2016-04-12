@@ -1,4 +1,5 @@
-# jscs2doc (work in progress) [![Deps](https://david-dm.org/FGRibreau/jscs2doc.png)](https://david-dm.org/FGRibreau/jscs2doc) [![Version](http://badge.fury.io/js/jscs2doc.png)](https://david-dm.org/FGRibreau/jscs2doc)  [![Downloads](http://img.shields.io/npm/dm/jscs2doc.svg)](https://www.npmjs.com/package/jscs2doc)
+# jscs2doc [![Deps](https://img.shields.io/david/FGRibreau/jscs2doc.svg)](https://david-dm.org/FGRibreau/jscs2doc) [![Version](https://img.shields.io/npm/v/jscs2doc.svg)](https://www.npmjs.com/package/jscs2doc)  [![Downloads](http://img.shields.io/npm/dm/jscs2doc.svg)](https://www.npmjs.com/package/jscs2doc)
+
 
 Convert .jscsrc (javascript code-style configuration) to a human readable format.
 
