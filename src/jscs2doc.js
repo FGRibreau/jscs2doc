@@ -119,10 +119,9 @@ $$RULE_END$$
     }
 
     function wrapInTemplate(html){
-      return `
-<html>
+      return `<html>
 <head>
-<link rel="stylesheet" href="http://jscs.info/assets/bundle.css" media="screen" title="no title" charset="utf-8" />
+<style>${require('fs').readFileSync(path.resolve(__dirname, './bundle.css')).toString('utf8')}</style>
 </head>
 <body>
 <div class="page__content">
