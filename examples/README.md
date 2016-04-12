@@ -1,168 +1,14 @@
-<div class="toc"><div class="toc-header"></div>
+<div class="toc"><div class="toc-header">Table of contents:</div>
 <ul>
-<li><a href="#enabled-rules">Enabled rules</a><ul>
-<li><a href="#disallowdanglingunderscores">disallowDanglingUnderscores</a></li>
-<li><a href="#disallowemptyblocks">disallowEmptyBlocks</a></li>
-<li><a href="#disallowkeywordsonnewline">disallowKeywordsOnNewLine</a></li>
-<li><a href="#disallowkeywords">disallowKeywords</a></li>
-<li><a href="#disallowmixedspacesandtabs">disallowMixedSpacesAndTabs</a></li>
-<li><a href="#disallowmultiplelinebreaks">disallowMultipleLineBreaks</a></li>
-<li><a href="#disallowmultiplelinestrings">disallowMultipleLineStrings</a></li>
-<li><a href="#disallowmultiplevardecl">disallowMultipleVarDecl</a></li>
-<li><a href="#disallowquotedkeysinobjects">disallowQuotedKeysInObjects</a></li>
-<li><a href="#disallowspaceafterobjectkeys">disallowSpaceAfterObjectKeys</a></li>
-<li><a href="#disallowspaceafterprefixunaryoperators">disallowSpaceAfterPrefixUnaryOperators</a></li>
-<li><a href="#disallowspacebeforebinaryoperators">disallowSpaceBeforeBinaryOperators</a></li>
-<li><a href="#disallowspacebeforepostfixunaryoperators">disallowSpaceBeforePostfixUnaryOperators</a></li>
-<li><a href="#disallowspacesinnamedfunctionexpression">disallowSpacesInNamedFunctionExpression</a></li>
-<li><a href="#disallowspacesinsidearraybrackets">disallowSpacesInsideArrayBrackets</a></li>
-<li><a href="#disallowspacesinsideparentheses">disallowSpacesInsideParentheses</a></li>
-<li><a href="#disallowtrailingcomma">disallowTrailingComma</a></li>
-<li><a href="#disallowtrailingwhitespace">disallowTrailingWhitespace</a></li>
-<li><a href="#disallowyodaconditions">disallowYodaConditions</a></li>
-<li><a href="#maximumlinelength">maximumLineLength</a></li>
-<li><a href="#requireblocksonnewline">requireBlocksOnNewline</a></li>
-<li><a href="#requirecamelcaseoruppercaseidentifiers">requireCamelCaseOrUpperCaseIdentifiers</a></li>
-<li><a href="#requirecapitalizedconstructors">requireCapitalizedConstructors</a></li>
-<li><a href="#requirecommabeforelinebreak">requireCommaBeforeLineBreak</a></li>
-<li><a href="#requirecurlybraces">requireCurlyBraces</a></li>
-<li><a href="#requiredotnotation">requireDotNotation</a></li>
-<li><a href="#requirelinefeedatfileend">requireLineFeedAtFileEnd</a></li>
-<li><a href="#requireoperatorbeforelinebreak">requireOperatorBeforeLineBreak</a></li>
-<li><a href="#requirepaddingnewlinesbeforelinecomments">requirePaddingNewLinesBeforeLineComments</a></li>
-<li><a href="#requireparenthesesaroundiife">requireParenthesesAroundIIFE</a></li>
-<li><a href="#requirespaceafterbinaryoperators">requireSpaceAfterBinaryOperators</a></li>
-<li><a href="#requirespaceafterkeywords">requireSpaceAfterKeywords</a></li>
-<li><a href="#requirespacebeforebinaryoperators">requireSpaceBeforeBinaryOperators</a></li>
-<li><a href="#requirespacebeforeblockstatements">requireSpaceBeforeBlockStatements</a></li>
-<li><a href="#requirespacebetweenarguments">requireSpaceBetweenArguments</a></li>
-<li><a href="#requirespacesinanonymousfunctionexpression">requireSpacesInAnonymousFunctionExpression</a></li>
-<li><a href="#requirespacesinconditionalexpression">requireSpacesInConditionalExpression</a></li>
-<li><a href="#requirespacesinfunctionexpression">requireSpacesInFunctionExpression</a></li>
-<li><a href="#requirespacesinnamedfunctionexpression">requireSpacesInNamedFunctionExpression</a></li>
-<li><a href="#safecontextkeyword">safeContextKeyword</a></li>
-<li><a href="#validateindentation">validateIndentation</a></li>
-<li><a href="#validatelinebreaks">validateLineBreaks</a></li>
-<li><a href="#validatequotemarks">validateQuoteMarks</a></li>
-</ul>
-</li>
-<li><a href="#disabled-rules">Disabled rules</a><ul>
-<li><a href="#disallowanonymousfunctions">disallowAnonymousFunctions</a></li>
-<li><a href="#disallowarrowfunctions">disallowArrowFunctions</a></li>
-<li><a href="#disallowcapitalizedcomments">disallowCapitalizedComments</a></li>
-<li><a href="#disallowcommabeforelinebreak">disallowCommaBeforeLineBreak</a></li>
-<li><a href="#disallowcurlybraces">disallowCurlyBraces</a></li>
-<li><a href="#disallowfunctiondeclarations">disallowFunctionDeclarations</a></li>
-<li><a href="#disallowidentifiernames">disallowIdentifierNames</a></li>
-<li><a href="#disallowimplicittypeconversion">disallowImplicitTypeConversion</a></li>
-<li><a href="#disallowkeywordsincomments">disallowKeywordsInComments</a></li>
-<li><a href="#disallowmultiplespaces">disallowMultipleSpaces</a></li>
-<li><a href="#disallownamedunassignedfunctions">disallowNamedUnassignedFunctions</a></li>
-<li><a href="#disallownewlinebeforeblockstatements">disallowNewlineBeforeBlockStatements</a></li>
-<li><a href="#disallownodetypes">disallowNodeTypes</a></li>
-<li><a href="#disallownotoperatorsinconditionals">disallowNotOperatorsInConditionals</a></li>
-<li><a href="#disallowobjectkeysonnewline">disallowObjectKeysOnNewLine</a></li>
-<li><a href="#disallowoperatorbeforelinebreak">disallowOperatorBeforeLineBreak</a></li>
-<li><a href="#disallowpaddingnewlinesafterblocks">disallowPaddingNewLinesAfterBlocks</a></li>
-<li><a href="#disallowpaddingnewlinesafterusestrict">disallowPaddingNewLinesAfterUseStrict</a></li>
-<li><a href="#disallowpaddingnewlinesbeforeexport">disallowPaddingNewLinesBeforeExport</a></li>
-<li><a href="#disallowpaddingnewlinesbeforekeywords">disallowPaddingNewlinesBeforeKeywords</a></li>
-<li><a href="#disallowpaddingnewlinesbeforelinecomments">disallowPaddingNewLinesBeforeLineComments</a></li>
-<li><a href="#disallowpaddingnewlinesinblocks">disallowPaddingNewlinesInBlocks</a></li>
-<li><a href="#disallowpaddingnewlinesinobjects">disallowPaddingNewLinesInObjects</a></li>
-<li><a href="#disallowparenthesesaroundarrowparam">disallowParenthesesAroundArrowParam</a></li>
-<li><a href="#disallowsemicolons">disallowSemicolons</a></li>
-<li><a href="#disallowshorthandarrowfunctions">disallowShorthandArrowFunctions</a></li>
-<li><a href="#disallowspaceafterbinaryoperators">disallowSpaceAfterBinaryOperators</a></li>
-<li><a href="#disallowspaceafterkeywords">disallowSpaceAfterKeywords</a></li>
-<li><a href="#disallowspaceafterlinecomment">disallowSpaceAfterLineComment</a></li>
-<li><a href="#disallowspacebeforeblockstatements">disallowSpaceBeforeBlockStatements</a></li>
-<li><a href="#disallowspacebeforecomma">disallowSpaceBeforeComma</a></li>
-<li><a href="#disallowspacebeforekeywords">disallowSpaceBeforeKeywords</a></li>
-<li><a href="#disallowspacebeforeobjectvalues">disallowSpaceBeforeObjectValues</a></li>
-<li><a href="#disallowspacebeforesemicolon">disallowSpaceBeforeSemicolon</a></li>
-<li><a href="#disallowspacebetweenarguments">disallowSpaceBetweenArguments</a></li>
-<li><a href="#disallowspacesinanonymousfunctionexpression">disallowSpacesInAnonymousFunctionExpression</a></li>
-<li><a href="#disallowspacesincallexpression">disallowSpacesInCallExpression</a></li>
-<li><a href="#disallowspacesinconditionalexpression">disallowSpacesInConditionalExpression</a></li>
-<li><a href="#disallowspacesinforstatement">disallowSpacesInForStatement</a></li>
-<li><a href="#disallowspacesinfunctiondeclaration">disallowSpacesInFunctionDeclaration</a></li>
-<li><a href="#disallowspacesinfunctionexpression">disallowSpacesInFunctionExpression</a></li>
-<li><a href="#disallowspacesinfunction">disallowSpacesInFunction</a></li>
-<li><a href="#disallowspacesinsidebrackets">disallowSpacesInsideBrackets</a></li>
-<li><a href="#disallowspacesinsideobjectbrackets">disallowSpacesInsideObjectBrackets</a></li>
-<li><a href="#disallowspacesinsideparenthesizedexpression">disallowSpacesInsideParenthesizedExpression</a></li>
-<li><a href="#jsdoc">jsDoc</a></li>
-<li><a href="#usage">Usage</a></li>
-<li><a href="#rules">Rules</a></li>
-<li><a href="#maximumnumberoflines">maximumNumberOfLines</a></li>
-<li><a href="#requirealignedobjectvalues">requireAlignedObjectValues</a></li>
-<li><a href="#requireanonymousfunctions">requireAnonymousFunctions</a></li>
-<li><a href="#requirearrowfunctions">requireArrowFunctions</a></li>
-<li><a href="#requirecapitalizedcomments">requireCapitalizedComments</a></li>
-<li><a href="#requiredollarbeforejqueryassignment">requireDollarBeforejQueryAssignment</a></li>
-<li><a href="#requirefunctiondeclarations">requireFunctionDeclarations</a></li>
-<li><a href="#requirekeywordsonnewline">requireKeywordsOnNewLine</a></li>
-<li><a href="#requirelinebreakaftervariableassignment">requireLineBreakAfterVariableAssignment</a></li>
-<li><a href="#requirematchingfunctionname">requireMatchingFunctionName</a></li>
-<li><a href="#requiremultiplevardecl">requireMultipleVarDecl</a></li>
-<li><a href="#requirenamedunassignedfunctions">requireNamedUnassignedFunctions</a></li>
-<li><a href="#requirenewlinebeforeblockstatements">requireNewlineBeforeBlockStatements</a></li>
-<li><a href="#requirenumericliterals">requireNumericLiterals</a></li>
-<li><a href="#requireobjectkeysonnewline">requireObjectKeysOnNewLine</a></li>
-<li><a href="#requirepaddingnewlineaftervariabledeclaration">requirePaddingNewLineAfterVariableDeclaration</a></li>
-<li><a href="#requirepaddingnewlinesafterblocks">requirePaddingNewLinesAfterBlocks</a></li>
-<li><a href="#requirepaddingnewlinesafterusestrict">requirePaddingNewLinesAfterUseStrict</a></li>
-<li><a href="#requirepaddingnewlinesbeforeexport">requirePaddingNewLinesBeforeExport</a></li>
-<li><a href="#requirepaddingnewlinesbeforekeywords">requirePaddingNewlinesBeforeKeywords</a></li>
-<li><a href="#requirepaddingnewlinesinblocks">requirePaddingNewlinesInBlocks</a></li>
-<li><a href="#requirepaddingnewlinesinobjects">requirePaddingNewLinesInObjects</a></li>
-<li><a href="#requireparenthesesaroundarrowparam">requireParenthesesAroundArrowParam</a></li>
-<li><a href="#requirequotedkeysinobjects">requireQuotedKeysInObjects</a></li>
-<li><a href="#requiresemicolons">requireSemicolons</a></li>
-<li><a href="#requireshorthandarrowfunctions">requireShorthandArrowFunctions</a></li>
-<li><a href="#requirespaceafterlinecomment">requireSpaceAfterLineComment</a></li>
-<li><a href="#requirespaceafterobjectkeys">requireSpaceAfterObjectKeys</a></li>
-<li><a href="#requirespaceafterprefixunaryoperators">requireSpaceAfterPrefixUnaryOperators</a></li>
-<li><a href="#requirespacebeforecomma">requireSpaceBeforeComma</a></li>
-<li><a href="#requirespacebeforekeywords">requireSpaceBeforeKeywords</a></li>
-<li><a href="#requirespacebeforeobjectvalues">requireSpaceBeforeObjectValues</a></li>
-<li><a href="#requirespacebeforepostfixunaryoperators">requireSpaceBeforePostfixUnaryOperators</a></li>
-<li><a href="#requirespacesincallexpression">requireSpacesInCallExpression</a></li>
-<li><a href="#requirespacesinforstatement">requireSpacesInForStatement</a></li>
-<li><a href="#requirespacesinfunctiondeclaration">requireSpacesInFunctionDeclaration</a></li>
-<li><a href="#requirespacesinfunction">requireSpacesInFunction</a></li>
-<li><a href="#requirespacesinsidearraybrackets">requireSpacesInsideArrayBrackets</a></li>
-<li><a href="#requirespacesinsidebrackets">requireSpacesInsideBrackets</a></li>
-<li><a href="#requirespacesinsideobjectbrackets">requireSpacesInsideObjectBrackets</a></li>
-<li><a href="#requirespacesinsideparentheses">requireSpacesInsideParentheses</a></li>
-<li><a href="#requirespacesinsideparenthesizedexpression">requireSpacesInsideParenthesizedExpression</a></li>
-<li><a href="#requirespread">requireSpread</a></li>
-<li><a href="#requiretemplatestrings">requireTemplateStrings</a></li>
-<li><a href="#requiretrailingcomma">requireTrailingComma</a></li>
-<li><a href="#requirevardeclfirst">requireVarDeclFirst</a></li>
-<li><a href="#requireyodaconditions">requireYodaConditions</a></li>
-<li><a href="#validatealignedfunctionparameters">validateAlignedFunctionParameters</a></li>
-<li><a href="#validatenewlineafterarrayelements">validateNewlineAfterArrayElements</a></li>
-<li><a href="#validateorderinobjectkeys">validateOrderInObjectKeys</a></li>
-<li><a href="#validateparameterseparator">validateParameterSeparator</a></li>
-</ul>
-</li>
+<li><a href="#enabled-rules">Enabled rules</a></li>
+<li><a href="#disabled-rules">Disabled rules</a></li>
 </ul>
 </div>
 <hr>
 <h1 id="enabled-rules">Enabled rules</h1>
 <h2 id="disallowdanglingunderscores">disallowDanglingUnderscores</h2>
 <p><strong>Current value </strong> : <code>true</code></p>
-<p>Disallows identifiers that start or end in <code>_</code>. Some popular identifiers are automatically listed as exceptions:</p>
-<ul>
-<li><code>__proto__</code> (javascript)</li>
-<li><code>_</code> (underscore.js)</li>
-<li><code>__filename</code> (node.js global)</li>
-<li><code>__dirname</code> (node.js global)</li>
-<li><code>super_</code> (node.js, used by
-<a href="http://nodejs.org/docs/latest/api/util.html#util_util_inherits_constructor_superconstructor"><code>util.inherits</code></a>)</li>
-</ul>
+<p>Disallows identifiers that start or end in <code>_</code>.</p>
 <p>Types: <code>Boolean</code> or <code>Object</code></p>
 <p>Values:</p>
 <ul>
@@ -173,6 +19,15 @@
 </li>
 </ul>
 <p>JSHint: <a href="http://www.jshint.com/docs/options/#nomen"><code>nomen</code></a></p>
+<p>Some popular identifiers are automatically listed as exceptions:</p>
+<ul>
+<li><code>__proto__</code> (javascript)</li>
+<li><code>_</code> (underscore.js)</li>
+<li><code>__filename</code> (node.js global)</li>
+<li><code>__dirname</code> (node.js global)</li>
+<li><code>super_</code> (node.js, used by
+<a href="http://nodejs.org/docs/latest/api/util.html#util_util_inherits_constructor_superconstructor"><code>util.inherits</code></a>)</li>
+</ul>
 <h4 id="example">Example</h4>
 <pre><code class="lang-js"><span class="hljs-string">"disallowDanglingUnderscores"</span>: { <span class="hljs-string">"allExcept"</span>: [<span class="hljs-string">"_exception"</span>] }
 </code></pre>
@@ -193,7 +48,7 @@
 <h2 id="disallowemptyblocks">disallowEmptyBlocks</h2>
 <p><strong>Current value </strong> : <code>true</code></p>
 <p>Disallows empty blocks (except for catch blocks).</p>
-<p>Type: <code>Boolean</code></p>
+<p>Type: <code>Boolean</code> or <code>Object</code></p>
 <p>Values:</p>
 <ul>
 <li><code>true</code> for default behavior (strict mode, no empty blocks allowed)</li>
@@ -239,7 +94,7 @@
 <pre><code class="lang-js"><span class="hljs-keyword">if</span> (x &lt; <span class="hljs-number">0</span>)
     x++;
 <span class="hljs-keyword">else</span>
-  *     x--;
+    x--;
 </code></pre>
 <pre><code class="lang-js"><span class="hljs-keyword">if</span> (x &lt; <span class="hljs-number">0</span>) {
     x++;
@@ -257,15 +112,12 @@
     x++;
 <span class="hljs-keyword">while</span>(x &lt; <span class="hljs-number">0</span>);
 </code></pre>
-<ul>
-<li><pre><code class="lang-js"><span class="hljs-keyword">do</span> {
-x++;
+<pre><code class="lang-js"><span class="hljs-keyword">do</span> {
+    x++;
 }
 <span class="hljs-comment">// comments</span>
 <span class="hljs-keyword">while</span>(x &lt; <span class="hljs-number">0</span>);
 </code></pre>
-</li>
-</ul>
 <h5 id="invalid">Invalid</h5>
 <pre><code class="lang-js"><span class="hljs-keyword">if</span> (x &lt; <span class="hljs-number">0</span>) {
     x++;
@@ -369,7 +221,7 @@ x++;
 <li><code>&#39;strict&#39;</code> disallows all multiple variable declarations</li>
 <li><code>&#39;allExcept&#39;</code> array of exceptions:<ul>
 <li><code>&#39;undefined&#39;</code> allows declarations where all variables are not defined</li>
-<li><code>&#39;required&#39;</code> allows declarations where all variables are importing external modules with require</li>
+<li><code>&#39;require&#39;</code> allows declarations where all variables are importing external modules with require</li>
 </ul>
 </li>
 </ul>
@@ -413,15 +265,15 @@ x++;
 <h2 id="disallowquotedkeysinobjects">disallowQuotedKeysInObjects</h2>
 <p><strong>Current value </strong> : <code>&quot;allButReserved&quot;</code></p>
 <p>Disallows quoted keys in object if possible.</p>
-<p>Types: <code>String</code> or <code>Boolean</code></p>
+<p>Types: <code>Boolean</code>, <code>String</code> or <code>Object</code></p>
 <p>Values:</p>
 <ul>
 <li><code>true</code> for strict mode</li>
-<li><code>&quot;allButReserved&quot;</code> (<em>deprecated</em> use <code>&quot;allExcept&quot;: [&quot;reserved&quot;]</code>)<ul>
-<li><code>Object</code>:</li>
+<li><code>&quot;allButReserved&quot;</code> (<em>deprecated</em> use <code>&quot;allExcept&quot;: [&quot;reserved&quot;]</code>)</li>
+<li><code>Object</code>:<ul>
 <li><code>&quot;allExcept&quot;</code> array of exceptions:<ul>
 <li><code>&quot;reserved&quot;</code> allows ES3+ reserved words to remain quoted
-which is helpful when using this option with JSHint&#39;s <code>es3</code> flag.</li>
+ which is helpful when using this option with JSHint&#39;s <code>es3</code> flag.</li>
 </ul>
 </li>
 </ul>
@@ -442,7 +294,7 @@ which is helpful when using this option with JSHint&#39;s <code>es3</code> flag.
 <h2 id="disallowspaceafterobjectkeys">disallowSpaceAfterObjectKeys</h2>
 <p><strong>Current value </strong> : <code>true</code></p>
 <p>Disallows space after object keys.</p>
-<p>Types: <code>Boolean</code> or <code>String</code></p>
+<p>Types: <code>Boolean</code>, <code>String</code>, or <code>Object</code></p>
 <p>Values:</p>
 <ul>
 <li><code>true</code></li>
@@ -455,6 +307,7 @@ which is helpful when using this option with JSHint&#39;s <code>es3</code> flag.
 <li><code>&quot;singleline&quot;</code> ignores objects if the object only takes up a single line</li>
 <li><code>&quot;multiline&quot;</code> ignores objects if the object takes up multiple lines</li>
 <li><code>&quot;aligned&quot;</code> ignores aligned object properties</li>
+<li><code>&quot;method&quot;</code> ignores method declarations</li>
 </ul>
 </li>
 </ul>
@@ -488,6 +341,13 @@ which is helpful when using this option with JSHint&#39;s <code>es3</code> flag.
 <pre><code class="lang-js"><span class="hljs-keyword">var</span> y = {
     abc: <span class="hljs-number">1</span>,
     d  : <span class="hljs-number">2</span>
+}
+</code></pre>
+<h5 id="valid-for-allexcept-method">Valid for <code>{ allExcept: [&#39;method&#39;] }</code></h5>
+<pre><code class="lang-js"><span class="hljs-keyword">var</span> y = {
+    fn () {
+       <span class="hljs-keyword">return</span> <span class="hljs-number">42</span>;
+    }
 }
 </code></pre>
 <h5 id="invalid">Invalid</h5>
@@ -607,7 +467,7 @@ ignores closing brackets in a row.</p>
 <h2 id="disallowspacesinsideparentheses">disallowSpacesInsideParentheses</h2>
 <p><strong>Current value </strong> : <code>true</code></p>
 <p>Disallows space after opening round bracket and before closing.</p>
-<p>Types: <code>Object</code> or <code>Boolean</code></p>
+<p>Types: <code>Boolean</code> or <code>Object</code></p>
 <p>Values: Either <code>true</code> or Object with <code>&quot;only&quot;</code> property as an array of tokens</p>
 <h4 id="example">Example</h4>
 <pre><code class="lang-js"><span class="hljs-string">"disallowSpacesInsideParentheses"</span>: <span class="hljs-literal">true</span>
@@ -616,10 +476,11 @@ ignores closing brackets in a row.</p>
 <pre><code class="lang-js"><span class="hljs-keyword">var</span> x = (<span class="hljs-number">1</span> + <span class="hljs-number">2</span>) * <span class="hljs-number">3</span>;
 </code></pre>
 <h5 id="valid-for-only-value">Valid for <code>only</code> value</h5>
-<pre><code class="lang-js"><span class="hljs-string">"disallowSpacesInsideParentheses"</span>: { <span class="hljs-string">"only"</span>: [ <span class="hljs-string">"{"</span>, <span class="hljs-string">"}"</span> ] }
+<pre><code class="lang-js"><span class="hljs-string">"disallowSpacesInsideParentheses"</span>: { <span class="hljs-string">"only"</span>: [ <span class="hljs-string">"{"</span>, <span class="hljs-string">"}"</span>, <span class="hljs-string">"\""</span> ] }
 </code></pre>
 <pre><code class="lang-js"><span class="hljs-keyword">var</span> x = ( <span class="hljs-number">1</span> + <span class="hljs-number">2</span> );
 <span class="hljs-keyword">var</span> x = foo({});
+<span class="hljs-keyword">var</span> x = foo(<span class="hljs-string">"1"</span>);
 </code></pre>
 <h5 id="invalid">Invalid</h5>
 <pre><code class="lang-js"><span class="hljs-keyword">var</span> x = foo( {} );
@@ -636,6 +497,8 @@ ignores closing brackets in a row.</p>
 <h5 id="valid">Valid</h5>
 <pre><code class="lang-js"><span class="hljs-keyword">var</span> foo = [<span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>];
 <span class="hljs-keyword">var</span> bar = {a: <span class="hljs-string">"a"</span>, b: <span class="hljs-string">"b"</span>}
+<span class="hljs-keyword">const</span> [<span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>];
+<span class="hljs-keyword">const</span> {a: <span class="hljs-string">"a"</span>, b: <span class="hljs-string">"b"</span>}
 </code></pre>
 <h5 id="invalid">Invalid</h5>
 <pre><code class="lang-js"><span class="hljs-keyword">var</span> foo = [<span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>, ];
@@ -727,6 +590,25 @@ foo = <span class="hljs-string">'baz'</span>;
 <h5 id="invalid">Invalid</h5>
 <pre><code class="lang-js"><span class="hljs-keyword">var</span> aLineOf41Chars = <span class="hljs-number">1234567890123456789</span>;
 </code></pre>
+<h4 id="example-for-allexcept-functionsignature">Example for allExcept functionSignature</h4>
+<pre><code class="lang-js"><span class="hljs-string">"maximumLineLength"</span>: { <span class="hljs-string">"value"</span>: <span class="hljs-number">40</span>, <span class="hljs-string">"allExcept"</span>: [ <span class="hljs-string">"functionSignature"</span> ] }
+</code></pre>
+<h5 id="valid">Valid</h5>
+<pre><code class="lang-js"><span class="hljs-keyword">var</span> f = <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">with, many, _many_, arguments</span>) </span>{ .... };
+<span class="hljs-keyword">let</span> f = x =&gt; x * x * x * x * x * x * x * x;
+(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">foo, bar, baz, quux, cuttlefish</span>) </span>{
+    <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">namesNaamesNaaamesNaaaames</span>(<span class="hljs-params"></span>) </span>{
+        ...
+    }
+})();
+<span class="hljs-keyword">const</span> longNameIgnoredAsWell = (a, b) =&gt; a * b;
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">X</span> </span>{ myLongMethodName(withPossiblyManyArgs) { ... } };
+</code></pre>
+<h5 id="invalid">Invalid</h5>
+<pre><code class="lang-js"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">x</span>(<span class="hljs-params"></span>) </span>{ <span class="hljs-comment">// valid</span>
+    <span class="hljs-keyword">return</span> <span class="hljs-string">"function_bodies_are_not_protected"</span>;
+}
+</code></pre>
 <h2 id="requireblocksonnewline">requireBlocksOnNewline</h2>
 <p><strong>Current value </strong> : <code>true</code></p>
 <p>Requires blocks to begin and end with a newline</p>
@@ -747,18 +629,15 @@ foo = <span class="hljs-string">'baz'</span>;
 </ul>
 </li>
 </ul>
-<h4 id="example">Example</h4>
+<h4 id="examples">Examples</h4>
 <pre><code class="lang-js"><span class="hljs-string">"requireBlocksOnNewline"</span>: <span class="hljs-literal">true</span>
-</code></pre>
-<pre><code class="lang-js"><span class="hljs-string">"requireBlocksOnNewline"</span>: <span class="hljs-number">1</span>
-</code></pre>
-<pre><code class="lang-js"><span class="hljs-string">"requireBlocksOnNewline"</span>: {
-     includeComments: <span class="hljs-literal">true</span>
+<span class="hljs-string">"requireBlocksOnNewline"</span>: <span class="hljs-number">1</span>
+<span class="hljs-string">"requireBlocksOnNewline"</span>: {
+     <span class="hljs-string">"includeComments"</span>: <span class="hljs-literal">true</span>
 }
-</code></pre>
-<pre><code class="lang-js"><span class="hljs-string">"requireBlocksOnNewline"</span>: {
-     includeComments: <span class="hljs-literal">true</span>,
-     minLines: <span class="hljs-number">1</span>
+<span class="hljs-string">"requireBlocksOnNewline"</span>: {
+     <span class="hljs-string">"includeComments"</span>: <span class="hljs-literal">true</span>,
+     <span class="hljs-string">"minLines"</span>: <span class="hljs-number">1</span>
 }
 </code></pre>
 <h5 id="valid-for-mode-true">Valid for mode <code>true</code></h5>
@@ -766,17 +645,19 @@ foo = <span class="hljs-string">'baz'</span>;
     doSomething();
 }
 <span class="hljs-keyword">var</span> abc = <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{};
+<span class="hljs-comment">// or</span>
+<span class="hljs-keyword">if</span> (<span class="hljs-literal">true</span>) { <span class="hljs-comment">//comments</span>
+    doSomething();
+}
+<span class="hljs-keyword">var</span> abc = <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{};
+<span class="hljs-comment">// or</span>
+<span class="hljs-keyword">if</span> (<span class="hljs-literal">true</span>) {
+    doSomething();
+<span class="hljs-comment">/** comments */</span>
+}
+<span class="hljs-keyword">var</span> abc = <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{};
 </code></pre>
-<pre><code>if (true) { //comments
-    doSomething();
-}
-var abc = function() {};
-</code></pre><pre><code>if (true) {
-    doSomething();
-/** comments */
-}
-var abc = function() {};
-</code></pre><h5 id="invalid">Invalid</h5>
+<h5 id="invalid">Invalid</h5>
 <pre><code class="lang-js"><span class="hljs-keyword">if</span> (<span class="hljs-literal">true</span>) {doSomething();}
 </code></pre>
 <h5 id="valid-for-mode-1">Valid for mode <code>1</code></h5>
@@ -786,8 +667,8 @@ var abc = function() {};
 }
 <span class="hljs-keyword">if</span> (<span class="hljs-literal">true</span>) { doSomething(); }
 <span class="hljs-keyword">var</span> abc = <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{};
-</code></pre>
-<pre><code class="lang-js"><span class="hljs-keyword">if</span> (<span class="hljs-literal">true</span>) { <span class="hljs-comment">//comments</span>
+<span class="hljs-comment">// or</span>
+<span class="hljs-keyword">if</span> (<span class="hljs-literal">true</span>) { <span class="hljs-comment">//comments</span>
     doSomething();
     doSomethingElse();
 }
@@ -805,38 +686,31 @@ var abc = function() {};
 <h5 id="invalid">Invalid</h5>
 <pre><code class="lang-js"><span class="hljs-keyword">if</span> (<span class="hljs-literal">true</span>) { doSomething(); doSomethingElse(); }
 </code></pre>
-<h5 id="valid-for-mode">Valid for mode {</h5>
-<pre><code> includeComments: true
-</code></pre><p>}</p>
-<pre><code>if (true) {
-    //comments
+<h5 id="valid-for-mode-includecomments-true">Valid for mode <code>{ includeComments: true }</code></h5>
+<pre><code class="lang-js"><span class="hljs-keyword">if</span> (<span class="hljs-literal">true</span>) {
+    <span class="hljs-comment">//comments</span>
     doSomething();
 }
-var abc = function() {};
-</code></pre><ul>
-<li><pre><code>if (true) {
-doSomething();
- //comments
+<span class="hljs-keyword">var</span> abc = <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{};
+<span class="hljs-comment">// or</span>
+<span class="hljs-keyword">if</span> (<span class="hljs-literal">true</span>) {
+    doSomething();
+     <span class="hljs-comment">//comments</span>
 }
-var abc = function() {};
-</code></pre></li>
-</ul>
+<span class="hljs-keyword">var</span> abc = <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{};
+</code></pre>
 <h5 id="invalid">Invalid</h5>
-<pre><code>if (true) { //comments
+<pre><code class="lang-js"><span class="hljs-keyword">if</span> (<span class="hljs-literal">true</span>) { <span class="hljs-comment">//comments</span>
     doSomething();
 }
-var abc = function() {};
-</code></pre><ul>
-<li><pre><code>if (true) {
-doSomething();
-/** comments */}
-var abc = function() {};
-</code></pre></li>
-</ul>
-<h5 id="valid-for-mode">Valid for mode {</h5>
-<pre><code> includeComments: true,
- minLines: `1`
-</code></pre><p>}</p>
+<span class="hljs-keyword">var</span> abc = <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{};
+<span class="hljs-comment">// or</span>
+<span class="hljs-keyword">if</span> (<span class="hljs-literal">true</span>) {
+    doSomething();
+<span class="hljs-comment">/** comments */</span>}
+<span class="hljs-keyword">var</span> abc = <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{};
+</code></pre>
+<h5 id="valid-for-mode-includecomments-true-minlines-1">Valid for mode <code>{ includeComments: true, minLines: 1 }</code></h5>
 <pre><code class="lang-js"><span class="hljs-keyword">if</span> (<span class="hljs-literal">true</span>) {
     <span class="hljs-comment">//comments</span>
     doSomething();
@@ -844,8 +718,8 @@ var abc = function() {};
 }
 <span class="hljs-keyword">if</span> (<span class="hljs-literal">true</span>) { doSomething(); }
 <span class="hljs-keyword">var</span> abc = <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{};
-</code></pre>
-<pre><code class="lang-js"><span class="hljs-keyword">if</span> (<span class="hljs-literal">true</span>) {
+<span class="hljs-comment">// or</span>
+<span class="hljs-keyword">if</span> (<span class="hljs-literal">true</span>) {
     doSomething();
     doSomethingElse();
     <span class="hljs-comment">//comments</span>
@@ -860,8 +734,8 @@ var abc = function() {};
 }
 <span class="hljs-keyword">if</span> (<span class="hljs-literal">true</span>) { doSomething(); }
 <span class="hljs-keyword">var</span> abc = <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{};
-</code></pre>
-<pre><code class="lang-js"><span class="hljs-keyword">if</span> (<span class="hljs-literal">true</span>) {
+<span class="hljs-comment">// or</span>
+<span class="hljs-keyword">if</span> (<span class="hljs-literal">true</span>) {
     doSomething();
     doSomethingElse();
     <span class="hljs-comment">/** comments */</span>}
@@ -871,15 +745,31 @@ var abc = function() {};
 <h2 id="requirecamelcaseoruppercaseidentifiers">requireCamelCaseOrUpperCaseIdentifiers</h2>
 <p><strong>Current value </strong> : <code>true</code></p>
 <p>Requires identifiers to be camelCased or UPPERCASE_WITH_UNDERSCORES</p>
-<p>Types: <code>Boolean</code> or <code>String</code></p>
+<p>Types: <code>Boolean</code> or <code>String</code> or <code>Object</code></p>
 <p>Values:</p>
 <ul>
 <li><code>true</code></li>
-<li><code>&quot;ignoreProperties&quot;</code> allows an exception for object property names.</li>
+<li><code>&quot;ignoreProperties&quot;</code> allows an exception for object property names. Deprecated, Please use the <code>Object</code> value</li>
+<li><code>Object</code>:<ul>
+<li><code>ignoreProperties</code>:  boolean that allows an exception for object property names</li>
+<li><code>strict</code>: boolean that forces the first character to not be capitalized</li>
+<li><code>allowedPrefixes</code>: array of String, RegExp, or ESTree RegExpLiteral values permitted as prefixes</li>
+<li><code>allowedSuffixes</code>: array of String, RegExp, or ESTree RegExpLiteral values permitted as suffixes</li>
+<li><code>allExcept</code>: array of String, RegExp, or ESTree RegExpLiteral values permitted as exceptions</li>
+</ul>
+</li>
 </ul>
 <p>JSHint: <a href="http://jshint.com/docs/options/#camelcase"><code>camelcase</code></a></p>
 <h4 id="example">Example</h4>
 <pre><code class="lang-js"><span class="hljs-string">"requireCamelCaseOrUpperCaseIdentifiers"</span>: <span class="hljs-literal">true</span>
+
+<span class="hljs-string">"requireCamelCaseOrUpperCaseIdentifiers"</span>: {<span class="hljs-string">"ignoreProperties"</span>: <span class="hljs-literal">true</span>, <span class="hljs-string">"strict"</span>: <span class="hljs-literal">true</span>}
+
+<span class="hljs-string">"requireCamelCaseOrUpperCaseIdentifiers"</span>: {<span class="hljs-string">"allowedPrefixes"</span>: [<span class="hljs-string">"opt_"</span>, <span class="hljs-regexp">/pfx\d+_/</span>]}
+
+<span class="hljs-string">"requireCamelCaseOrUpperCaseIdentifiers"</span>: {<span class="hljs-string">"allowedSuffixes"</span>: [<span class="hljs-string">"_dCel"</span>, {regex: {pattern: <span class="hljs-string">"_[kMG]?Hz"</span>}}]}
+
+<span class="hljs-string">"requireCamelCaseOrUpperCaseIdentifiers"</span>: {<span class="hljs-string">"allExcept"</span>: [<span class="hljs-string">"var_args"</span>, {regex: {pattern: <span class="hljs-string">"^ignore"</span>, flags: <span class="hljs-string">"i"</span>}}]}
 </code></pre>
 <h5 id="valid-for-mode-true">Valid for mode <code>true</code></h5>
 <pre><code class="lang-js"><span class="hljs-keyword">var</span> camelCase = <span class="hljs-number">0</span>;
@@ -907,6 +797,68 @@ var abc = function() {};
 <span class="hljs-keyword">var</span> Mixed_case = <span class="hljs-number">2</span>;
 <span class="hljs-keyword">var</span> mixed_Case = <span class="hljs-number">3</span>;
 <span class="hljs-keyword">var</span> snake_case = { snake_case: <span class="hljs-number">6</span> };
+</code></pre>
+<h5 id="valid-for-mode-strict">Valid for mode <code>strict</code></h5>
+<pre><code class="lang-js"><span class="hljs-keyword">var</span> camelCase = <span class="hljs-number">0</span>;
+<span class="hljs-keyword">var</span> _camelCase = <span class="hljs-number">2</span>;
+<span class="hljs-keyword">var</span> camelCase_ = <span class="hljs-number">3</span>;
+<span class="hljs-keyword">var</span> UPPER_CASE = <span class="hljs-number">4</span>;
+<span class="hljs-keyword">var</span> obj.snake_case = <span class="hljs-number">5</span>;
+<span class="hljs-keyword">var</span> camelCase = { snake_case: <span class="hljs-number">6</span> };
+</code></pre>
+<h5 id="invalid-for-mode-strict">Invalid for mode <code>strict</code></h5>
+<pre><code class="lang-js"><span class="hljs-keyword">var</span> Mixed_case = <span class="hljs-number">2</span>;
+<span class="hljs-keyword">var</span> Snake_case = { snake_case: <span class="hljs-number">6</span> };
+<span class="hljs-keyword">var</span> snake_case = { SnakeCase: <span class="hljs-number">6</span> };
+</code></pre>
+<h5 id="valid-for-allowedprefix-opt_-pfx-d-_">Valid for <code>{ allowedPrefix: [&quot;opt_&quot;, /pfx\d+_/] }</code></h5>
+<pre><code class="lang-js"><span class="hljs-keyword">var</span> camelCase = <span class="hljs-number">0</span>;
+<span class="hljs-keyword">var</span> CamelCase = <span class="hljs-number">1</span>;
+<span class="hljs-keyword">var</span> _camelCase = <span class="hljs-number">2</span>;
+<span class="hljs-keyword">var</span> camelCase_ = <span class="hljs-number">3</span>;
+<span class="hljs-keyword">var</span> UPPER_CASE = <span class="hljs-number">4</span>;
+<span class="hljs-keyword">var</span> opt_camelCase = <span class="hljs-number">5</span>;
+<span class="hljs-keyword">var</span> pfx32_camelCase = <span class="hljs-number">6</span>;
+</code></pre>
+<h5 id="invalid-for-allowedprefix-opt_-pfx-d">Invalid for <code>{ allowedPrefix: [&quot;opt_&quot;, /pfx\d+/] }</code></h5>
+<pre><code class="lang-js"><span class="hljs-keyword">var</span> lower_case = <span class="hljs-number">1</span>;
+<span class="hljs-keyword">var</span> Mixed_case = <span class="hljs-number">2</span>;
+<span class="hljs-keyword">var</span> mixed_Case = <span class="hljs-number">3</span>;
+<span class="hljs-keyword">var</span> req_camelCase = <span class="hljs-number">4</span>;
+<span class="hljs-keyword">var</span> pfx_CamelCase = <span class="hljs-number">5</span>;
+</code></pre>
+<h5 id="valid-for-allowedsuffixes-_dcel-regex-pattern-_-kmg-hz">Valid for <code>{ allowedSuffixes: [&quot;_dCel&quot;, {regex:{pattern:&quot;_[kMG]?Hz&quot;}}] }</code></h5>
+<pre><code class="lang-js"><span class="hljs-keyword">var</span> camelCase = <span class="hljs-number">0</span>;
+<span class="hljs-keyword">var</span> CamelCase = <span class="hljs-number">1</span>;
+<span class="hljs-keyword">var</span> _camelCase = <span class="hljs-number">2</span>;
+<span class="hljs-keyword">var</span> camelCase_ = <span class="hljs-number">3</span>;
+<span class="hljs-keyword">var</span> UPPER_CASE = <span class="hljs-number">4</span>;
+<span class="hljs-keyword">var</span> camelCase_dCel = <span class="hljs-number">5</span>;
+<span class="hljs-keyword">var</span> _camelCase_MHz = <span class="hljs-number">6</span>;
+</code></pre>
+<h5 id="invalid-for-allowedsuffixes-_dcel-regex-pattern-_-kmg-hz">Invalid for <code>{ allowedSuffixes: [&quot;_dCel&quot;, {regex:{pattern:&quot;_[kMG]?Hz&quot;}}] }</code></h5>
+<pre><code class="lang-js"><span class="hljs-keyword">var</span> lower_case = <span class="hljs-number">1</span>;
+<span class="hljs-keyword">var</span> Mixed_case = <span class="hljs-number">2</span>;
+<span class="hljs-keyword">var</span> mixed_Case = <span class="hljs-number">3</span>;
+<span class="hljs-keyword">var</span> camelCase_cCel = <span class="hljs-number">4</span>;
+<span class="hljs-keyword">var</span> CamelCase_THz = <span class="hljs-number">5</span>;
+</code></pre>
+<h5 id="valid-for-allexcept-var_args-regex-pattern-ignore-flags-i">Valid for <code>{ allExcept: [&quot;var_args&quot;, {regex:{pattern:&quot;^ignore&quot;,flags:&quot;i&quot;}}] }</code></h5>
+<pre><code class="lang-js"><span class="hljs-keyword">var</span> camelCase = <span class="hljs-number">0</span>;
+<span class="hljs-keyword">var</span> CamelCase = <span class="hljs-number">1</span>;
+<span class="hljs-keyword">var</span> _camelCase = <span class="hljs-number">2</span>;
+<span class="hljs-keyword">var</span> camelCase_ = <span class="hljs-number">3</span>;
+<span class="hljs-keyword">var</span> UPPER_CASE = <span class="hljs-number">4</span>;
+<span class="hljs-keyword">var</span> var_args = <span class="hljs-number">5</span>;
+<span class="hljs-keyword">var</span> ignoreThis_Please = <span class="hljs-number">6</span>;
+<span class="hljs-keyword">var</span> iGnOrEeThis_Too = <span class="hljs-number">7</span>;
+</code></pre>
+<h5 id="invalid-for-allexcept-var_args-regex-pattern-ignore-flags-i">Invalid for <code>{ allExcept: [&quot;var_args&quot;, {regex:{pattern:&quot;^ignore&quot;,flags:&quot;i&quot;}}] }</code></h5>
+<pre><code class="lang-js"><span class="hljs-keyword">var</span> lower_case = <span class="hljs-number">1</span>;
+<span class="hljs-keyword">var</span> Mixed_case = <span class="hljs-number">2</span>;
+<span class="hljs-keyword">var</span> mixed_Case = <span class="hljs-number">3</span>;
+<span class="hljs-keyword">var</span> var_arg = <span class="hljs-number">4</span>;
+<span class="hljs-keyword">var</span> signore_per_favore = <span class="hljs-number">5</span>;
 </code></pre>
 <h2 id="requirecapitalizedconstructors">requireCapitalizedConstructors</h2>
 <p><strong>Current value </strong> : <code>true</code></p>
@@ -962,9 +914,17 @@ var abc = function() {};
   &quot;finally&quot;
 ]</code></p>
 <p>Requires curly braces after statements.</p>
-<p>Types: <code>Array</code> or <code>Boolean</code></p>
-<p>Values: Array of quoted keywords or <code>true</code> to require curly braces after the following keywords:</p>
-<p>JSHint: <a href="http://jshint.com/docs/options/#curly"><code>curly</code></a></p>
+<p>Types: <code>Array</code> or <code>Boolean</code> or <code>Object</code></p>
+<p>Values:</p>
+<pre><code>- Array of quoted keywords
+- `true` to require curly braces after the following keywords
+- `Object`
+    - `&#39;keywords&#39;`
+        - Array of quoted keywords
+    - `&#39;allExcept&#39;`
+        - Array of keywords inside of the block that would allow curly braces
+        - Ex: [&quot;return&quot; , &quot;continue&quot;, &quot;break&quot;]
+</code></pre><p>JSHint: <a href="http://jshint.com/docs/options/#curly"><code>curly</code></a></p>
 <h4 id="example">Example</h4>
 <pre><code class="lang-js"><span class="hljs-string">"requireCurlyBraces"</span>: [
     <span class="hljs-string">"if"</span>,
@@ -1025,25 +985,29 @@ var abc = function() {};
 <pre><code class="lang-js"><span class="hljs-string">"requireDotNotation"</span>: { <span class="hljs-string">"allExcept"</span>: [ <span class="hljs-string">"snake_case"</span> ] }
 </code></pre>
 <h5 id="valid">Valid</h5>
-<pre><code>var a = b[c];
-var a = b.c;
-var a = b[&#39;snake_cased&#39;];
-var a = b[&#39;camelCased_butWithSnakes&#39;];
-</code></pre><h4 id="example-for-allexcept-keywords">Example for allExcept keywords</h4>
+<pre><code class="lang-js"><span class="hljs-keyword">var</span> a = b[c];
+<span class="hljs-keyword">var</span> a = b.c;
+<span class="hljs-keyword">var</span> a = b[<span class="hljs-string">'snake_cased'</span>];
+<span class="hljs-keyword">var</span> a = b[<span class="hljs-string">'camelCased_butWithSnakes'</span>];
+</code></pre>
+<h4 id="example-for-allexcept-keywords">Example for allExcept keywords</h4>
 <pre><code class="lang-js"><span class="hljs-string">"requireDotNotation"</span>: { <span class="hljs-string">"allExcept"</span>: [ <span class="hljs-string">"keywords"</span> ] }
 </code></pre>
 <h5 id="valid">Valid</h5>
-<pre><code>var a = b[&#39;yield&#39;]; // reserved word in ES5
-var a = b[&#39;let&#39;];
-</code></pre><h5 id="invalid">Invalid</h5>
-<pre><code>var a = b[&#39;await&#39;]; // reserved word in ES6
-</code></pre><h4 id="example-for-allexcept-keywords-with-esnext">Example for allExcept keywords with esnext</h4>
+<pre><code class="lang-js"><span class="hljs-keyword">var</span> a = b[<span class="hljs-string">'yield'</span>]; <span class="hljs-comment">// reserved word in ES5</span>
+<span class="hljs-keyword">var</span> a = b[<span class="hljs-string">'let'</span>];
+</code></pre>
+<h5 id="invalid">Invalid</h5>
+<pre><code class="lang-js"><span class="hljs-keyword">var</span> a = b[<span class="hljs-string">'await'</span>]; <span class="hljs-comment">// reserved word in ES6</span>
+</code></pre>
+<h4 id="example-for-allexcept-keywords-with-esnext">Example for allExcept keywords with esnext</h4>
 <pre><code class="lang-js"><span class="hljs-string">"requireDotNotation"</span>: { <span class="hljs-string">"allExcept"</span>: [ <span class="hljs-string">"keywords"</span> ] }
 <span class="hljs-string">"esnext"</span>: <span class="hljs-literal">true</span>
 </code></pre>
 <h5 id="valid">Valid</h5>
-<pre><code>var a = b[&#39;await&#39;]; // reserved word in ES6
-</code></pre><h4 id="example-for-es3-true">Example for <code>&quot;es3&quot;: true</code></h4>
+<pre><code class="lang-js"><span class="hljs-keyword">var</span> a = b[<span class="hljs-string">'await'</span>]; <span class="hljs-comment">// reserved word in ES6</span>
+</code></pre>
+<h4 id="example-for-es3-true">Example for <code>&quot;es3&quot;: true</code></h4>
 <pre><code class="lang-js"><span class="hljs-string">"requireDotNotation"</span>: <span class="hljs-literal">true</span>,
 <span class="hljs-string">"es3"</span>: <span class="hljs-literal">true</span>
 </code></pre>
@@ -1247,7 +1211,9 @@ x = y ?
 ]
 </code></pre>
 <h5 id="valid">Valid</h5>
-<pre><code class="lang-js"><span class="hljs-keyword">return</span> <span class="hljs-literal">true</span>;
+<pre><code class="lang-js"><span class="hljs-keyword">if</span> (x) {
+    x++;
+}
 </code></pre>
 <h5 id="invalid">Invalid</h5>
 <pre><code class="lang-js"><span class="hljs-keyword">if</span>(x) {
@@ -1435,6 +1401,8 @@ Child properties must be set to <code>true</code>.</p>
 <h5 id="valid">Valid</h5>
 <pre><code class="lang-js"><span class="hljs-keyword">var</span> x = <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params"></span>) </span>{};
 <span class="hljs-keyword">var</span> x = <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">a</span> (<span class="hljs-params"></span>) </span>{};
+<span class="hljs-keyword">var</span> x = <span class="hljs-keyword">async</span> <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params"></span>) </span>{};
+<span class="hljs-keyword">var</span> x = <span class="hljs-keyword">async</span> <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">a</span> (<span class="hljs-params"></span>) </span>{};
 </code></pre>
 <h5 id="invalid">Invalid</h5>
 <pre><code class="lang-js"><span class="hljs-keyword">var</span> x = <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{};
@@ -1443,25 +1411,53 @@ Child properties must be set to <code>true</code>.</p>
 <span class="hljs-keyword">var</span> x = <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">a</span>(<span class="hljs-params"></span>) </span>{};
 <span class="hljs-keyword">var</span> x = <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">a</span> (<span class="hljs-params"></span>)</span>{};
 <span class="hljs-keyword">var</span> x = <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">a</span>(<span class="hljs-params"></span>)</span>{};
+<span class="hljs-keyword">var</span> x = <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">async</span> <span class="hljs-title">a</span>(<span class="hljs-params"></span>) </span>{};
+<span class="hljs-keyword">var</span> x = <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">async</span> <span class="hljs-title">a</span> (<span class="hljs-params"></span>)</span>{};
+<span class="hljs-keyword">var</span> x = <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">async</span> <span class="hljs-title">a</span>(<span class="hljs-params"></span>)</span>{};
 </code></pre>
 <h2 id="requirespacesinnamedfunctionexpression">requireSpacesInNamedFunctionExpression</h2>
 <p><strong>Current value </strong> : <code>{
   &quot;beforeOpeningCurlyBrace&quot;: true
 }</code></p>
 <p>Requires space before <code>()</code> or <code>{}</code> in named function expressions.</p>
-<p>Type: <code>Object</code></p>
-<p>Values: <code>&quot;beforeOpeningRoundBrace&quot;</code> and <code>&quot;beforeOpeningCurlyBrace&quot;</code> as child properties.
-Child properties must be set to <code>true</code>.</p>
+<p>Types: <code>Object</code></p>
+<ul>
+<li><code>Object</code> (at least one of properties must be present and it must be set to true):<ul>
+<li><code>&#39;beforeOpeningRoundBrace&#39;</code><ul>
+<li><code>true</code> validates that there is a space before <code>()</code></li>
+</ul>
+</li>
+<li><code>&#39;beforeOpeningCurlyBrace&#39;</code><ul>
+<li><code>true</code> validates that there is a space before <code>{}</code></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
 <h4 id="example">Example</h4>
 <pre><code class="lang-js"><span class="hljs-string">"requireSpacesInNamedFunctionExpression"</span>: {
     <span class="hljs-string">"beforeOpeningRoundBrace"</span>: <span class="hljs-literal">true</span>,
     <span class="hljs-string">"beforeOpeningCurlyBrace"</span>: <span class="hljs-literal">true</span>
 }
 </code></pre>
-<h5 id="valid">Valid</h5>
+<pre><code class="lang-js"><span class="hljs-string">"requireSpacesInNamedFunctionExpression"</span>: {
+    <span class="hljs-string">"beforeOpeningRoundBrace"</span>: <span class="hljs-literal">true</span>
+}
+</code></pre>
+<pre><code class="lang-js"><span class="hljs-string">"requireSpacesInNamedFunctionExpression"</span>: {
+    <span class="hljs-string">"beforeOpeningCurlyBrace"</span>: <span class="hljs-literal">true</span>
+}
+</code></pre>
+<h5 id="valid-for-mode-beforeopeningroundbrace-true-beforeopeningcurlybrace-true">Valid for mode <code>{ &quot;beforeOpeningRoundBrace&quot;: true, &quot;beforeOpeningCurlyBrace&quot;: true }</code></h5>
 <pre><code class="lang-js"><span class="hljs-keyword">var</span> x = <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">a</span> (<span class="hljs-params"></span>) </span>{};
 </code></pre>
-<h5 id="invalid">Invalid</h5>
+<h5 id="valid-for-mode-beforeopeningroundbrace-true">Valid for mode <code>{ &quot;beforeOpeningRoundBrace&quot;: true }</code></h5>
+<pre><code class="lang-js"><span class="hljs-keyword">var</span> x = <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">a</span> (<span class="hljs-params"></span>)</span>{};
+</code></pre>
+<h5 id="valid-for-mode-beforeopeningcurlybrace-true">Valid for mode <code>{ &quot;beforeOpeningCurlyBrace&quot;: true }</code></h5>
+<pre><code class="lang-js"><span class="hljs-keyword">var</span> x = <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">a</span>(<span class="hljs-params"></span>) </span>{};
+</code></pre>
+<h5 id="invalid-for-mode-beforeopeningroundbrace-true-beforeopeningcurlybrace-true">Invalid for mode <code>{ &quot;beforeOpeningRoundBrace&quot;: true, &quot;beforeOpeningCurlyBrace&quot;: true }</code></h5>
 <pre><code class="lang-js"><span class="hljs-keyword">var</span> x = <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">a</span>(<span class="hljs-params"></span>) </span>{};
 <span class="hljs-keyword">var</span> x = <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">a</span> (<span class="hljs-params"></span>)</span>{};
 <span class="hljs-keyword">var</span> x = <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">a</span>(<span class="hljs-params"></span>)</span>{};
@@ -1577,7 +1573,7 @@ Child properties must be set to <code>true</code>.</p>
 </li>
 <li><code>reportOncePerFile</code><ul>
 <li><code>true</code> specifies that validation for the file should stop running upon encountering the first rule
- violation and return the details of that violation in the report</li>
+violation and return the details of that violation in the report</li>
 <li><code>false</code> specifies that all lines in the file should be validated with all rule violations captured in
 the final report</li>
 </ul>
@@ -1608,6 +1604,7 @@ x++;</span>
 <li><code>Object</code>:<ul>
 <li><code>escape</code>: allow the &quot;other&quot; quote mark to be used, but only to avoid having to escape</li>
 <li><code>mark</code>: the same effect as the non-object values</li>
+<li><code>ignoreJSX</code>: ignore JSX nodes</li>
 </ul>
 </li>
 </ul>
@@ -1625,6 +1622,9 @@ x++;</span>
 <pre><code class="lang-js"><span class="hljs-keyword">var</span> x = <span class="hljs-string">"x"</span>;
 <span class="hljs-keyword">var</span> y = <span class="hljs-string">'x'</span>;
 </code></pre>
+<h5 id="valid-example-for-mode-mark-escape-true-ignorejsx-true">Valid example for mode <code>{ &quot;mark&quot;: &quot;&#39;&quot;, &quot;escape&quot;: true, &quot;ignoreJSX&quot;: true }</code></h5>
+<pre><code class="lang-js">&lt;div className=<span class="hljs-string">"flex-card__header"</span>&gt;{<span class="hljs-keyword">this</span>.props.children}&lt;<span class="hljs-regexp">/div&gt;;</span>
+</code></pre>
 <h5 id="valid-example-for-mode-or-mode-true">Valid example for mode <code>&quot;\&quot;&quot;</code> or mode <code>true</code></h5>
 <pre><code class="lang-js"><span class="hljs-keyword">var</span> x = <span class="hljs-string">"x"</span>;
 </code></pre>
@@ -1636,7 +1636,9 @@ x++;</span>
 </code></pre>
 <h1 id="disabled-rules">Disabled rules</h1>
 <h2 id="disallowanonymousfunctions">disallowAnonymousFunctions</h2>
-<p>Requires that a function expression be named.</p>
+<p>Requires that a function expression be named.
+Named functions provide more information in the error stack trace than anonymous functions.</p>
+<p>This option does not help if you use Arrow functions (ES6) which are always anonymous.</p>
 <p>Type: <code>Boolean</code></p>
 <p>Value: <code>true</code></p>
 <h4 id="example">Example</h4>
@@ -1659,6 +1661,21 @@ $(<span class="hljs-string">'#foo'</span>).click(<span class="hljs-function"><sp
 $(<span class="hljs-string">'#foo'</span>).click(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>)</span>{
 
 });
+</code></pre>
+<h2 id="disallowarraydestructuringreturn">disallowArrayDestructuringReturn</h2>
+<p>Requires object destructuring for multiple return values,
+not array destructuring.</p>
+<p>Type: <code>Boolean</code></p>
+<p>Value: <code>true</code></p>
+<p>Version: <code>ES6</code></p>
+<h4 id="example">Example</h4>
+<pre><code class="lang-js"><span class="hljs-string">"disallowArrayDestructuringReturn"</span>: <span class="hljs-literal">true</span>
+</code></pre>
+<h5 id="valid">Valid</h5>
+<pre><code class="lang-js"><span class="hljs-keyword">const</span> { left, right } = processInput(input);
+</code></pre>
+<h5 id="invalid">Invalid</h5>
+<pre><code class="lang-js"><span class="hljs-keyword">const</span> [ left, __, top ] = processInput(input);
 </code></pre>
 <h2 id="disallowarrowfunctions">disallowArrowFunctions</h2>
 <p>Disallows arrow functions.</p>
@@ -1719,7 +1736,7 @@ as event listeners, or as anything polymorhpic- or mixin-related. See
  */
 </code></pre><h2 id="disallowcommabeforelinebreak">disallowCommaBeforeLineBreak</h2>
 <p>Disallows commas as last token on a line in lists.</p>
-<p>Type: <code>Boolean</code>|<code>Object</code></p>
+<p>Type: <code>Boolean</code>, <code>Object</code></p>
 <p>Values:</p>
 <ul>
 <li><code>true</code> for default behavior (strict mode, comma on the same line)</li>
@@ -1740,7 +1757,7 @@ as event listeners, or as anything polymorhpic- or mixin-related. See
     one: <span class="hljs-number">1</span>
     , two: <span class="hljs-number">2</span>
 };
-<span class="hljs-keyword">var</span> y = { three: <span class="hljs-number">3</span>, four: <span class="hljs-number">4</span>};
+<span class="hljs-keyword">var</span> y = {three: <span class="hljs-number">3</span>, four: <span class="hljs-number">4</span>};
 </code></pre>
 <h5 id="invalid">Invalid</h5>
 <pre><code class="lang-js"><span class="hljs-keyword">var</span> x = {
@@ -1801,6 +1818,21 @@ $(<span class="hljs-string">'#foo'</span>).click(<span class="hljs-function"><sp
 
 }
 </code></pre>
+<h2 id="disallowidenticaldestructuringnames">disallowIdenticalDestructuringNames</h2>
+<p>Disallows identical destructuring names for the key and value in favor of using shorthand destructuring.</p>
+<p>Type: <code>Boolean</code></p>
+<p>Value: <code>true</code></p>
+<h4 id="example">Example</h4>
+<pre><code class="lang-js"><span class="hljs-string">"disallowIdenticalDestructuringNames"</span>: <span class="hljs-literal">true</span>
+</code></pre>
+<h5 id="valid-for-mode-true">Valid for mode <code>true</code></h5>
+<pre><code class="lang-js"><span class="hljs-keyword">var</span> {left, top} = obj; <span class="hljs-comment">// shorthand</span>
+<span class="hljs-keyword">var</span> {left, top: topper} = obj; <span class="hljs-comment">// different identifier</span>
+<span class="hljs-keyword">let</span> { [key]: key } = obj; <span class="hljs-comment">// computed property</span>
+</code></pre>
+<h5 id="invalid-for-mode-true">Invalid for mode <code>true</code></h5>
+<pre><code class="lang-js"><span class="hljs-keyword">var</span> {left: left, top: top} = obj;
+</code></pre>
 <h2 id="disallowidentifiernames">disallowIdentifierNames</h2>
 <p>Disallows a specified set of identifier names.</p>
 <p>Type: <code>Array</code></p>
@@ -1858,7 +1890,21 @@ x = ~s.indexOf(<span class="hljs-string">'.'</span>);
 /**
  * FIXME
  */
-</code></pre><h2 id="disallowmultiplespaces">disallowMultipleSpaces</h2>
+</code></pre><h2 id="disallowmultilineternary">disallowMultiLineTernary</h2>
+<p>Disallows the test, consequent and alternate to be on separate lines when using the ternary operator.</p>
+<p>Types: <code>Boolean</code></p>
+<h4 id="example">Example</h4>
+<pre><code class="lang-js"><span class="hljs-string">"disallowMultiLineTernary"</span>: <span class="hljs-literal">true</span>
+</code></pre>
+<h5 id="valid">Valid</h5>
+<pre><code class="lang-js"><span class="hljs-keyword">var</span> foo = (a === b) ? <span class="hljs-number">1</span> : <span class="hljs-number">2</span>;
+</code></pre>
+<h5 id="invalid">Invalid</h5>
+<pre><code class="lang-js"><span class="hljs-keyword">var</span> foo = (a === b)
+  ? <span class="hljs-number">1</span>
+  : <span class="hljs-number">2</span>;
+</code></pre>
+<h2 id="disallowmultiplespaces">disallowMultipleSpaces</h2>
 <p>Disallows multiple indentation characters (tabs or spaces) between identifiers, keywords, and any other token</p>
 <p>Type: <code>Boolean</code> or <code>Object</code></p>
 <p>Values: <code>true</code> or <code>{&quot;allowEOLComments&quot;: true}</code> to allow on-line comments to be ignored</p>
@@ -1871,13 +1917,10 @@ x = ~s.indexOf(<span class="hljs-string">'.'</span>);
 <pre><code class="lang-js"><span class="hljs-keyword">var</span> x = <span class="hljs-string">"hello"</span>;
 <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">y</span>(<span class="hljs-params"></span>) </span>{}
 </code></pre>
-<ul>
-<li><h5 id="valid-for-alloweolcomments-true">Valid for <code>{&quot;allowEOLComments&quot;: true}</code></h5>
+<h5 id="valid-for-alloweolcomments-true">Valid for <code>{&quot;allowEOLComments&quot;: true}</code></h5>
 <pre><code class="lang-js"><span class="hljs-keyword">var</span> x = <span class="hljs-string">"hello"</span>    <span class="hljs-comment">// world;</span>
 <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">y</span>(<span class="hljs-params"></span>) </span>{}
 </code></pre>
-</li>
-</ul>
 <h5 id="invalid">Invalid</h5>
 <pre><code class="lang-js"><span class="hljs-keyword">var</span> x  = <span class="hljs-string">"hello"</span>;
 <span class="hljs-function"><span class="hljs-keyword">function</span>  <span class="hljs-title">y</span>(<span class="hljs-params"></span>) </span>{}
@@ -1897,14 +1940,58 @@ x = ~s.indexOf(<span class="hljs-string">'.'</span>);
 <h5 id="invalid">Invalid</h5>
 <pre><code class="lang-js">[].forEach(<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">x</span>(<span class="hljs-params"></span>) </span>{});
 </code></pre>
+<h2 id="disallownestedternaries">disallowNestedTernaries</h2>
+<p>Disallows nested ternaries.</p>
+<p>Types: <code>Boolean</code>, <code>Object</code></p>
+<p>Values: <code>true</code> or an Object that contains a <code>maxLevel</code> property equal to an integer
+indicating the maximum levels of nesting to be allowed.</p>
+<h4 id="examples">Examples</h4>
+<pre><code class="lang-js"><span class="hljs-string">"disallowNestedTernaries"</span>: <span class="hljs-literal">true</span>
+
+<span class="hljs-comment">// or</span>
+
+<span class="hljs-string">"disallowNestedTernaries"</span>: { <span class="hljs-string">"maxLevel"</span>: <span class="hljs-number">1</span> }
+</code></pre>
+<h5 id="valid-for-modes-true-and-maxlevel-1">Valid for modes <code>true</code> and <code>&quot;maxLevel&quot;: 1</code></h5>
+<pre><code class="lang-js"><span class="hljs-keyword">var</span> foo = (a === b) ? <span class="hljs-number">1</span> : <span class="hljs-number">2</span>;
+</code></pre>
+<h5 id="invalid-for-mode-true-but-valid-for-maxlevel-1">Invalid for mode <code>true</code>, but valid for <code>&quot;maxLevel&quot;: 1</code></h5>
+<pre><code class="lang-js"><span class="hljs-keyword">var</span> foo = (a === b)
+  ? (a === c)
+    ? <span class="hljs-number">1</span>
+    : <span class="hljs-number">2</span>
+  : (b === c)
+    ? <span class="hljs-number">3</span>
+    : <span class="hljs-number">4</span>;
+</code></pre>
+<h5 id="invalid-for-modes-true-and-maxlevel-1">Invalid for modes <code>true</code> and <code>&quot;maxLevel&quot;: 1</code></h5>
+<pre><code class="lang-js"><span class="hljs-keyword">var</span> foo = (a === b)
+  ? (a === c)
+    ? (c === d)
+      ? <span class="hljs-number">5</span>
+      : <span class="hljs-number">6</span>
+    : <span class="hljs-number">2</span>
+  : (b === c)
+    ? <span class="hljs-number">3</span>
+    : <span class="hljs-number">4</span>;
+</code></pre>
 <h2 id="disallownewlinebeforeblockstatements">disallowNewlineBeforeBlockStatements</h2>
 <p>Disallows newline before opening curly brace of all block statements.</p>
-<p>Type: <code>Boolean</code> or <code>Array</code></p>
+<p>Type: <code>Boolean</code> or <code>Array</code> or <code>Object</code></p>
 <p>Values:</p>
 <ul>
 <li><code>true</code> always disallows newline before curly brace of block statements</li>
 <li><code>Array</code> specifies block-type keywords after which newlines are disallowed before curly brace<ul>
-<li>Valid types include: <code>[&#39;if&#39;, &#39;else&#39;, &#39;try&#39;, &#39;catch&#39;, &#39;finally&#39;, &#39;do&#39;, &#39;while&#39;, &#39;for&#39;, &#39;function&#39;]</code></li>
+<li>Valid types include: <code>[&#39;if&#39;, &#39;else&#39;, &#39;try&#39;, &#39;catch&#39;, &#39;finally&#39;, &#39;do&#39;, &#39;while&#39;, &#39;for&#39;, &#39;function&#39;, &#39;class&#39;,
+&#39;switch&#39;]</code></li>
+</ul>
+</li>
+<li><code>Object</code>:<ul>
+<li><code>value</code>: <code>true</code> or an Array</li>
+<li><code>allExcept</code>: Array of exceptions<ul>
+<li><code>&quot;multiLine&quot;</code>: if the conditions span on multiple lines, require a new line before the curly brace</li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>
@@ -2035,9 +2122,43 @@ x = ~s.indexOf(<span class="hljs-string">'.'</span>);
     <span class="hljs-keyword">return</span> x - <span class="hljs-number">1</span>;
 }
 </code></pre>
+<h4 id="example">Example</h4>
+<pre><code class="lang-js"><span class="hljs-string">"disallowNewlineBeforeBlockStatements"</span>: {
+    <span class="hljs-string">"value"</span>: <span class="hljs-literal">true</span>,
+    <span class="hljs-string">"allExcept"</span>: [<span class="hljs-string">"multiLine"</span>]
+}
+</code></pre>
+<h5 id="valid">Valid</h5>
+<pre><code class="lang-js"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">myFunc</span>(<span class="hljs-params">x,
+                y</span>)
+</span>{
+    <span class="hljs-keyword">return</span> x + y;
+}
+
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">foo</span>(<span class="hljs-params"></span>) </span>{
+    <span class="hljs-keyword">if</span> (bar &amp;&amp; baz &amp;&amp;
+        bat)
+    {
+        <span class="hljs-keyword">return</span> <span class="hljs-literal">true</span>;
+    }
+}
+</code></pre>
+<h5 id="invalid">Invalid</h5>
+<pre><code class="lang-js"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">myFunc</span>(<span class="hljs-params">x,
+                y</span>) </span>{
+    <span class="hljs-keyword">return</span> x + y;
+}
+
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">foo</span>(<span class="hljs-params"></span>) </span>{
+    <span class="hljs-keyword">if</span> (bar &amp;&amp; baz &amp;&amp;
+        bat) {
+        <span class="hljs-keyword">return</span> <span class="hljs-literal">true</span>;
+    }
+}
+</code></pre>
 <h2 id="disallownodetypes">disallowNodeTypes</h2>
-<p>Disallow use of certain node types (from Esprima/ESTree).
-Esprima node types</p>
+<p>Disallow use of certain node types (from Esprima/ESTree).</p>
+<p>Esprima node types</p>
 <ul>
 <li><a href="https://github.com/jquery/esprima/blob/758196a1c5dd20c3ead6300283a1112428bc7045/esprima.js#L108-L169">list</a></li>
 </ul>
@@ -2415,7 +2536,7 @@ foo({
 </code></pre>
 <h5 id="valid">Valid</h5>
 <pre><code class="lang-js">[<span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>].map(x =&gt; x * x);
-<span class="hljs-comment">// params are always required for multiple parameters</span>
+<span class="hljs-comment">// parentheses are always required for multiple parameters</span>
 [<span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>].map((x, y, z) =&gt; x * x);
 </code></pre>
 <h5 id="invalid">Invalid</h5>
@@ -2488,20 +2609,62 @@ evens.map(v =&gt; v + <span class="hljs-number">1</span>);
 <h5 id="invalid">Invalid</h5>
 <pre><code class="lang-js">x+ y;
 </code></pre>
-<h2 id="disallowspaceafterkeywords">disallowSpaceAfterKeywords</h2>
-<p>Disallows space after keyword.</p>
-<p>Types: <code>Array</code> or <code>Boolean</code></p>
-<p>Values: Array of quoted keywords or <code>true</code> to disallow spaces after all possible keywords.</p>
+<h2 id="disallowspaceaftercomma">disallowSpaceAfterComma</h2>
+<p>Disallows spaces after commas</p>
+<p>Types: <code>Boolean</code> or <code>Object</code></p>
+<p>Values:</p>
+<ul>
+<li><code>Boolean</code>: <code>true</code> to disallow any spaces after any comma</li>
+<li><code>Object</code>: <code>&quot;allExcept&quot;</code> array of exceptions<ul>
+<li><code>&quot;sparseArrays&quot;</code> to allow spaces in place of absent values in sparse arrays</li>
+</ul>
+</li>
+</ul>
 <h4 id="example">Example</h4>
-<pre><code class="lang-js"><span class="hljs-string">"disallowSpaceAfterKeywords"</span>: [
-    <span class="hljs-string">"if"</span>,
-    <span class="hljs-string">"else"</span>,
-    <span class="hljs-string">"for"</span>,
-    <span class="hljs-string">"while"</span>,
-    <span class="hljs-string">"do"</span>,
-    <span class="hljs-string">"switch"</span>,
-    <span class="hljs-string">"try"</span>,
-    <span class="hljs-string">"catch"</span>
+<pre><code class="lang-js"><span class="hljs-string">"disallowSpaceAfterComma"</span>: <span class="hljs-literal">true</span>
+</code></pre>
+<pre><code class="lang-js"><span class="hljs-string">"disallowSpaceAfterComma"</span> {<span class="hljs-string">"allExcept"</span>: [<span class="hljs-string">"sparseArrays"</span>]}
+</code></pre>
+<h5 id="valid-for-mode-true">Valid for mode <code>true</code></h5>
+<pre><code class="lang-js">[a,b,c];
+</code></pre>
+<h5 id="invalid-for-mode-true">Invalid for mode <code>true</code></h5>
+<pre><code class="lang-js">[a, b, c];
+</code></pre>
+<pre><code class="lang-js">[a,b, , ,c];
+</code></pre>
+<h5 id="valid-for-mode-allexcept-sparsearrays">Valid for mode <code>{&quot;allExcept&quot;: [&quot;sparseArrays&quot;]}</code></h5>
+<pre><code class="lang-js">[a,b, , ,c];
+</code></pre>
+<h5 id="invalid-for-mode-allexcept-sparsearrays">Invalid for mode <code>{&quot;allExcept&quot;: [&quot;sparseArrays&quot;]}</code></h5>
+<pre><code class="lang-js">[a, b, , , c];
+``
+
+
+
+
+
+## disallowSpaceAfterKeywords
+
+
+Disallows space after keyword.
+
+Types: `Array` or `Boolean`
+
+Values: Array of quoted keywords or `true` to disallow spaces after all possible keywords.
+
+#### Example
+
+```js
+&quot;disallowSpaceAfterKeywords&quot;: [
+    &quot;if&quot;,
+    &quot;else&quot;,
+    &quot;for&quot;,
+    &quot;while&quot;,
+    &quot;do&quot;,
+    &quot;switch&quot;,
+    &quot;try&quot;,
+    &quot;catch&quot;
 ]
 </code></pre>
 <h5 id="valid">Valid</h5>
@@ -2567,16 +2730,33 @@ evens.map(v =&gt; v + <span class="hljs-number">1</span>);
 </code></pre>
 <h2 id="disallowspacebeforecomma">disallowSpaceBeforeComma</h2>
 <p>Disallows spaces before commas</p>
-<p>Types: <code>Boolean</code></p>
-<p>Values: <code>true</code> to disallow any spaces before any comma</p>
+<p>Types: <code>Boolean</code> or <code>Object</code></p>
+<p>Values:</p>
+<ul>
+<li><code>Boolean</code>: <code>true</code> to disallow any spaces before any comma</li>
+<li><code>Object</code>: <code>&quot;allExcept&quot;</code> array of exceptions<ul>
+<li><code>&quot;sparseArrays&quot;</code> to allow spaces in place of absent values in sparse arrays</li>
+</ul>
+</li>
+</ul>
 <h4 id="example">Example</h4>
 <pre><code class="lang-js"><span class="hljs-string">"disallowSpaceBeforeComma"</span>: <span class="hljs-literal">true</span>
 </code></pre>
-<h5 id="valid">Valid</h5>
+<pre><code class="lang-js"><span class="hljs-string">"disallowSpaceBeforeComma"</span>: {<span class="hljs-string">"allExcept"</span>: [<span class="hljs-string">"sparseArrays"</span>]}
+</code></pre>
+<h5 id="valid-for-mode-true">Valid for mode <code>true</code></h5>
 <pre><code class="lang-js"><span class="hljs-keyword">var</span> a, b;
 </code></pre>
-<h5 id="invalid">Invalid</h5>
+<h5 id="invalid-for-mode-true">Invalid for mode <code>true</code></h5>
 <pre><code class="lang-js"><span class="hljs-keyword">var</span> a ,b;
+</code></pre>
+<pre><code class="lang-js">[a, b, , , c]
+</code></pre>
+<h5 id="valid-for-mode-allexcept-sparsearrays">Valid for mode <code>{&quot;allExcept&quot;: [&quot;sparseArrays&quot;]}</code></h5>
+<pre><code class="lang-js">[a, b, , , c]
+</code></pre>
+<h5 id="invalid-for-mode-allexcept-sparsearrays">Invalid for mode  <code>{&quot;allExcept&quot;: [&quot;sparseArrays&quot;]}</code></h5>
+<pre><code class="lang-js">[a , b , , , c]
 </code></pre>
 <h2 id="disallowspacebeforekeywords">disallowSpaceBeforeKeywords</h2>
 <p>Disallows space before keyword.</p>
@@ -2599,7 +2779,7 @@ evens.map(v =&gt; v + <span class="hljs-number">1</span>);
 }
 </code></pre>
 <h2 id="disallowspacebeforeobjectvalues">disallowSpaceBeforeObjectValues</h2>
-<p>Disallows space after object keys.</p>
+<p>Disallows space before object values.</p>
 <p>Type: <code>Boolean</code></p>
 <p>Value: <code>true</code></p>
 <h4 id="example">Example</h4>
@@ -2613,13 +2793,26 @@ evens.map(v =&gt; v + <span class="hljs-number">1</span>);
 </code></pre>
 <h2 id="disallowspacebeforesemicolon">disallowSpaceBeforeSemicolon</h2>
 <p>Disallows spaces before semicolons.</p>
-<p>Types: <code>Boolean</code></p>
-<p>Values: <code>true</code> to disallow any spaces before any semicolon.</p>
+<p>Types: <code>Boolean</code> or <code>Object</code></p>
+<p>Values:</p>
+<ul>
+<li><code>true</code> to disallow any spaces before any semicolon.</li>
+<li><code>Object</code>:<ul>
+<li><code>&quot;allExcept&quot;</code>: <code>[ &quot;(&quot; ]</code> list of tokens that can occur after semicolon</li>
+</ul>
+</li>
+</ul>
 <h4 id="example">Example</h4>
 <pre><code class="lang-js"><span class="hljs-string">"disallowSpaceBeforeSemicolon"</span>: <span class="hljs-literal">true</span>
 </code></pre>
 <h5 id="valid">Valid</h5>
 <pre><code class="lang-js"><span class="hljs-keyword">var</span> a = <span class="hljs-number">1</span>;
+</code></pre>
+<ul>
+<li><h5 id="valid-for-mode-allexcept">Valid for mode <code>{ &quot;allExcept&quot;: [ &quot;(&quot; ] }</code></h5>
+</li>
+</ul>
+<pre><code class="lang-js"><span class="hljs-keyword">for</span> ( ; nodeIndex &lt; nodesCount; ++nodeIndex ) {}
 </code></pre>
 <h5 id="invalid">Invalid</h5>
 <pre><code class="lang-js"><span class="hljs-keyword">var</span> a = <span class="hljs-number">1</span> ;
@@ -2764,6 +2957,8 @@ Child properties must be set to <code>true</code>.</p>
 <h5 id="valid">Valid</h5>
 <pre><code class="lang-js"><span class="hljs-keyword">var</span> x = <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>)</span>{};
 <span class="hljs-keyword">var</span> x = <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">a</span>(<span class="hljs-params"></span>)</span>{};
+<span class="hljs-keyword">var</span> x = <span class="hljs-keyword">async</span> <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>)</span>{};
+<span class="hljs-keyword">var</span> x = <span class="hljs-keyword">async</span> <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">a</span>(<span class="hljs-params"></span>)</span>{};
 </code></pre>
 <h5 id="invalid">Invalid</h5>
 <pre><code class="lang-js"><span class="hljs-keyword">var</span> x = <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{};
@@ -2772,9 +2967,12 @@ Child properties must be set to <code>true</code>.</p>
 <span class="hljs-keyword">var</span> x = <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">a</span>(<span class="hljs-params"></span>) </span>{};
 <span class="hljs-keyword">var</span> x = <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">a</span> (<span class="hljs-params"></span>)</span>{};
 <span class="hljs-keyword">var</span> x = <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">a</span> (<span class="hljs-params"></span>) </span>{};
+<span class="hljs-keyword">var</span> x = <span class="hljs-keyword">async</span> <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params"></span>) </span>{};
+<span class="hljs-keyword">var</span> x = <span class="hljs-keyword">async</span> <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">a</span>(<span class="hljs-params"></span>) </span>{};
+<span class="hljs-keyword">var</span> x = <span class="hljs-keyword">async</span> <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">a</span> (<span class="hljs-params"></span>)</span>{};
+<span class="hljs-keyword">var</span> x = <span class="hljs-keyword">async</span> <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">a</span> (<span class="hljs-params"></span>) </span>{};
 </code></pre>
 <h2 id="disallowspacesinfunction">disallowSpacesInFunction</h2>
-<p>Expression</p>
 <p>Disallows space before <code>()</code> or <code>{}</code> in function expressions (both <a href="#disallowspacesinnamedfunctionexpression">named</a>
 and <a href="#disallowspacesinanonymousfunctionexpression">anonymous</a>) and function declarations.</p>
 <p>Type: <code>Object</code></p>
@@ -2801,6 +2999,44 @@ Child properties must be set to <code>true</code>.</p>
 <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">a</span>(<span class="hljs-params"></span>) </span>{}
 <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">a</span> (<span class="hljs-params"></span>)</span>{}
 <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">a</span> (<span class="hljs-params"></span>) </span>{}
+</code></pre>
+<h2 id="disallowspacesingenerator">disallowSpacesInGenerator</h2>
+<p>Disallow space before or after <code>*</code> in generator functions</p>
+<p>Types: <code>Object</code></p>
+<ul>
+<li><code>Object</code> (at least one of properties must be present and it must be set to true):<ul>
+<li><code>&#39;beforeStar&#39;</code><ul>
+<li><code>true</code> disallows space before <code>*</code></li>
+</ul>
+</li>
+<li><code>&#39;afterStar&#39;</code><ul>
+<li><code>true</code> disallows space after <code>*</code></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h4 id="example">Example</h4>
+<pre><code class="lang-js"><span class="hljs-string">"disallowSpacesInGenerator"</span>: {
+    <span class="hljs-string">"beforeStar"</span>: <span class="hljs-literal">true</span>,
+    <span class="hljs-string">"afterStar"</span>: <span class="hljs-literal">true</span>
+}
+</code></pre>
+<h5 id="valid-for-mode-beforestar-true-afterstar-false">Valid for mode <code>{ &quot;beforeStar&quot;: true, &quot;afterStar&quot;: false }</code></h5>
+<pre><code class="lang-js"><span class="hljs-keyword">var</span> x = <span class="hljs-function"><span class="hljs-keyword">function</span>* (<span class="hljs-params"></span>) </span>{};
+<span class="hljs-function"><span class="hljs-keyword">function</span>* <span class="hljs-title">a</span>(<span class="hljs-params"></span>) </span>{};
+<span class="hljs-keyword">var</span> x = <span class="hljs-keyword">async</span> <span class="hljs-function"><span class="hljs-keyword">function</span>* (<span class="hljs-params"></span>) </span>{};
+<span class="hljs-keyword">var</span> x = <span class="hljs-keyword">async</span> <span class="hljs-function"><span class="hljs-keyword">function</span>* <span class="hljs-title">a</span> (<span class="hljs-params"></span>) </span>{};
+<span class="hljs-keyword">async</span> <span class="hljs-function"><span class="hljs-keyword">function</span>* <span class="hljs-title">a</span>(<span class="hljs-params"></span>) </span>{}
+<span class="hljs-keyword">var</span> x = <span class="hljs-keyword">async</span> <span class="hljs-function"><span class="hljs-keyword">function</span>* (<span class="hljs-params"></span>)</span>{};
+</code></pre>
+<h5 id="valid-for-mode-beforestar-false-afterstar-true">Valid for mode <code>{ &quot;beforeStar&quot;: false, &quot;afterStar&quot;: true }</code></h5>
+<pre><code class="lang-js"><span class="hljs-keyword">var</span> x = <span class="hljs-function"><span class="hljs-keyword">function</span> *(<span class="hljs-params"></span>) </span>{};
+<span class="hljs-function"><span class="hljs-keyword">function</span> *<span class="hljs-title">a</span>(<span class="hljs-params"></span>) </span>{};
+<span class="hljs-keyword">var</span> x = <span class="hljs-keyword">async</span> <span class="hljs-function"><span class="hljs-keyword">function</span> *(<span class="hljs-params"></span>) </span>{};
+<span class="hljs-keyword">var</span> x = <span class="hljs-keyword">async</span> <span class="hljs-function"><span class="hljs-keyword">function</span> *<span class="hljs-title">a</span> (<span class="hljs-params"></span>) </span>{};
+<span class="hljs-keyword">async</span> <span class="hljs-function"><span class="hljs-keyword">function</span> *<span class="hljs-title">a</span>(<span class="hljs-params"></span>) </span>{}
+<span class="hljs-keyword">var</span> x = <span class="hljs-keyword">async</span> <span class="hljs-function"><span class="hljs-keyword">function</span> *(<span class="hljs-params"></span>)</span>{};
 </code></pre>
 <h2 id="disallowspacesinsidebrackets">disallowSpacesInsideBrackets</h2>
 <p>Disallows space after opening square bracket and before closing.
@@ -2885,6 +3121,76 @@ ignores closing brackets in a row.</p>
 <h5 id="invalid">Invalid</h5>
 <pre><code class="lang-js"><span class="hljs-keyword">var</span> x = ( <span class="hljs-number">1</span> + obj.size ) * ( <span class="hljs-number">2</span> );
 </code></pre>
+<h2 id="disallowspacesinsidetemplatestringplaceholders">disallowSpacesInsideTemplateStringPlaceholders</h2>
+<p>Disallows spaces before and after curly brace inside template string placeholders.</p>
+<p>Type: <code>Boolean</code></p>
+<p>Value: <code>true</code></p>
+<h4 id="example">Example</h4>
+<pre><code class="lang-js"><span class="hljs-string">"disallowSpacesInsideTemplateStringPlaceholders"</span>: <span class="hljs-literal">true</span>
+</code></pre>
+<h5 id="valid-for-mode-true">Valid for mode <code>true</code></h5>
+<pre><code class="lang-js"><span class="hljs-string">`Hello <span class="hljs-subst">${name}</span>!`</span>
+</code></pre>
+<h5 id="invalid-for-mode-true">Invalid for mode <code>true</code></h5>
+<pre><code class="lang-js"><span class="hljs-string">`Hello <span class="hljs-subst">${ name}</span>!`</span>
+<span class="hljs-string">`Hello <span class="hljs-subst">${name }</span>!`</span>
+<span class="hljs-string">`Hello <span class="hljs-subst">${ name }</span>!`</span>
+</code></pre>
+<h2 id="disallowtabs">disallowTabs</h2>
+<p>Disallows tabs everywhere.</p>
+<p>Type: <code>Boolean</code></p>
+<p>Value: <code>true</code></p>
+<h4 id="example">Example</h4>
+<pre><code class="lang-js"><span class="hljs-string">"disallowTabs"</span>: <span class="hljs-literal">true</span>
+</code></pre>
+<h5 id="valid">Valid</h5>
+<pre><code class="lang-js"><span class="hljs-keyword">if</span> (<span class="hljs-literal">true</span>) {
+\s\sfoo();
+}
+</code></pre>
+<h5 id="invalid">Invalid</h5>
+<pre><code class="lang-js"><span class="hljs-keyword">if</span> (<span class="hljs-literal">true</span>){
+\tfoo();
+}
+</code></pre>
+<h2 id="disallowunusedparams">disallowUnusedParams</h2>
+<p>Disallows unused params in function expression and function declaration.</p>
+<p>Types: <code>Boolean</code></p>
+<p>Values: <code>true</code></p>
+<h4 id="example">Example</h4>
+<pre><code class="lang-js"><span class="hljs-string">"disallowUnusedParams"</span>: <span class="hljs-literal">true</span>
+</code></pre>
+<h5 id="valid">Valid</h5>
+<pre><code class="lang-js"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">x</span>(<span class="hljs-params">test</span>) </span>{
+    <span class="hljs-keyword">return</span> test;
+}
+
+<span class="hljs-keyword">var</span> x = <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">test</span>) </span>{
+    <span class="hljs-keyword">return</span> test;
+}
+</code></pre>
+<h5 id="invalid">Invalid</h5>
+<pre><code class="lang-js">  * <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">x</span>(<span class="hljs-params">test</span>) </span>{
+}
+
+<span class="hljs-keyword">var</span> x = <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">test</span>) </span>{
+}
+</code></pre>
+<h2 id="disallowvar">disallowVar</h2>
+<p>Disallows declaring variables with <code>var</code>.</p>
+<p>Types: <code>Boolean</code></p>
+<p>Values: <code>true</code></p>
+<p>Version: <code>ES6</code></p>
+<h4 id="example">Example</h4>
+<pre><code class="lang-js"><span class="hljs-string">"disallowVar"</span>: <span class="hljs-literal">true</span>
+</code></pre>
+<h5 id="valid">Valid</h5>
+<pre><code class="lang-js"><span class="hljs-keyword">let</span> foo;
+<span class="hljs-keyword">const</span> bar;
+</code></pre>
+<h5 id="invalid">Invalid</h5>
+<pre><code class="lang-js"><span class="hljs-keyword">var</span> baz;
+</code></pre>
 <h2 id="jsdoc">jsDoc</h2>
 <p>Validate jsdoc comments</p>
 <h2 id="usage">Usage</h2>
@@ -2899,12 +3205,12 @@ ignores closing brackets in a row.</p>
 </code></pre>
 <h2 id="rules">Rules</h2>
 <h3 id="checkannotations">checkAnnotations</h3>
-<p>Ensures tag names are valid</p>
+<p>Checks tag names are valid.</p>
 <p>There are 3 presets for <code>Closure Compiler</code>, <code>JSDoc3</code> and <code>JSDuck5</code>.</p>
-<p>By default it allows any tag of mixed set. You can pass <code>Object</code>
+<p>By default it allows any tag from any preset. You can pass <code>Object</code>
 to select preset with <code>preset</code> field and add custom tags with <code>extra</code> field.</p>
 <p>Type: <code>Boolean</code> or <code>String</code> or <code>{&quot;preset&quot;: String, &quot;extra&quot;: Object}</code>
-(see <a href="#user-content-tag-values">tag values</a>)</p>
+(see <a href="#user-content-tag-values">tag values</a>).</p>
 <p>Values: <code>true</code>, <code>&quot;closurecompiler&quot;</code>, <code>&quot;jsdoc3&quot;</code>, <code>&quot;jsduck5&quot;</code>, <code>Object</code></p>
 <p>Context: <code>file</code></p>
 <p>Tags: <code>*</code></p>
@@ -2952,8 +3258,39 @@ to select preset with <code>preset</code> field and add custom tags with <code>e
 <h5 id="invalid">Invalid</h5>
 <pre><code class="lang-js"><span class="hljs-comment">/** @still-invalid */</span>
 </code></pre>
+<h3 id="checkparamexistence">checkParamExistence</h3>
+<p>Checks all parameters are documented.</p>
+<p>Type: <code>Boolean</code></p>
+<p>Values: <code>true</code></p>
+<h4 id="example">Example</h4>
+<pre><code class="lang-js"><span class="hljs-string">"checkParamExistence"</span>: <span class="hljs-literal">true</span>
+</code></pre>
+<h5 id="valid">Valid</h5>
+<pre><code class="lang-js"><span class="hljs-comment">/**
+ * @param {string} message
+ * @return {string}
+ */</span>
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">_f</span> (<span class="hljs-params"> message </span>) </span>{
+  <span class="hljs-keyword">return</span> <span class="hljs-literal">true</span>;
+}
+
+<span class="hljs-comment">/**
+ * @inheritdoc
+ */</span>
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">_f</span> (<span class="hljs-params"> message </span>) </span>{
+  <span class="hljs-keyword">return</span> <span class="hljs-literal">true</span>;
+}
+</code></pre>
+<h5 id="invalid">Invalid</h5>
+<pre><code class="lang-js"><span class="hljs-comment">/**
+ * @return {string}
+ */</span>
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">_f</span> (<span class="hljs-params"> message </span>) </span>{
+  <span class="hljs-keyword">return</span> <span class="hljs-literal">true</span>;
+}
+</code></pre>
 <h3 id="checkparamnames">checkParamNames</h3>
-<p>Ensures param names in jsdoc and in function declaration are equal</p>
+<p>Checks param names in jsdoc and in function declaration are equal.</p>
 <p>Type: <code>Boolean</code></p>
 <p>Values: <code>true</code></p>
 <p>Context: <code>functions</code></p>
@@ -2976,7 +3313,7 @@ to select preset with <code>preset</code> field and add custom tags with <code>e
 <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">method</span>(<span class="hljs-params">message</span>) </span>{}
 </code></pre>
 <h3 id="requireparamtypes">requireParamTypes</h3>
-<p>Ensures params in jsdoc contains type</p>
+<p>Checks params in jsdoc contains type.</p>
 <p>Type: <code>Boolean</code></p>
 <p>Values: <code>true</code></p>
 <p>Context: <code>functions</code></p>
@@ -2997,7 +3334,7 @@ to select preset with <code>preset</code> field and add custom tags with <code>e
 <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">method</span>(<span class="hljs-params"></span>) </span>{}
 </code></pre>
 <h3 id="checkredundantparams">checkRedundantParams</h3>
-<p>Reports redundant params in jsdoc</p>
+<p>Reports redundant params in jsdoc.</p>
 <p>Type: <code>Boolean</code></p>
 <p>Values: <code>true</code></p>
 <p>Context: <code>functions</code></p>
@@ -3018,8 +3355,7 @@ to select preset with <code>preset</code> field and add custom tags with <code>e
 <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">method</span>(<span class="hljs-params"></span>) </span>{}
 </code></pre>
 <h3 id="checkreturntypes">checkReturnTypes</h3>
-<p>Reports discrepancies between the claimed in jsdoc and actual type if
-both exist (code scan)</p>
+<p>Checks for differences between the jsdoc and actual return types if both exist.</p>
 <p>Type: <code>Boolean</code></p>
 <p>Values: <code>true</code></p>
 <p>Context: <code>functions</code></p>
@@ -3047,7 +3383,7 @@ both exist (code scan)</p>
 }
 </code></pre>
 <h3 id="checkredundantreturns">checkRedundantReturns</h3>
-<p>Report statements for functions with no return</p>
+<p>Report statements for functions without return.</p>
 <p>Type: <code>Boolean</code></p>
 <p>Values: <code>true</code></p>
 <p>Context: <code>functions</code></p>
@@ -3072,7 +3408,7 @@ both exist (code scan)</p>
 }
 </code></pre>
 <h3 id="requirereturntypes">requireReturnTypes</h3>
-<p>Ensures returns in jsdoc contains type</p>
+<p>Checks returns in jsdoc contains type</p>
 <p>Type: <code>Boolean</code></p>
 <p>Values: <code>true</code></p>
 <p>Context: <code>functions</code></p>
@@ -3098,12 +3434,12 @@ both exist (code scan)</p>
 <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">method</span>(<span class="hljs-params"></span>) </span>{}
 </code></pre>
 <h3 id="checktypes">checkTypes</h3>
-<p>Reports invalid types for bunch of tags</p>
-<p>In <code>strictNativeCase</code> mode ensures that case of natives is the same as in
-this list: <code>boolean</code>, <code>number</code>, <code>string</code>, <code>Object</code>, <code>Array</code>, <code>Date</code>, <code>RegExp</code>.</p>
-<p>In <code>capitalizedNativeCase</code> mode ensures that first letter in all native types and
-primitives is uppercased except the case with <code>function</code> in google closure
-format: <code>{function(...)}</code></p>
+<p>Reports invalid types for bunch of tags.</p>
+<p>The <code>strictNativeCase</code> mode checks that case of natives is the same as in this
+list: <code>boolean</code>, <code>number</code>, <code>string</code>, <code>Object</code>, <code>Array</code>, <code>Date</code>, <code>RegExp</code>.</p>
+<p>The <code>capitalizedNativeCase</code> mode checks that the first letter in all native
+types and primitives is uppercased except the case with <code>function</code> in google
+closure format: <code>{function(...)}</code></p>
 <p>Type: <code>Boolean</code> or <code>String</code></p>
 <p>Values: <code>true</code> or <code>&quot;strictNativeCase&quot;</code> or <code>&quot;capitalizedNativeCase&quot;</code></p>
 <p>Context: <code>*</code></p>
@@ -3155,7 +3491,7 @@ format: <code>{function(...)}</code></p>
 <span class="hljs-keyword">var</span> x = <span class="hljs-number">1</span>;
 </code></pre>
 <h3 id="checkredundantaccess">checkRedundantAccess</h3>
-<p>Reports redundant access declarations</p>
+<p>Reports redundant access declarations.</p>
 <p>Type: <code>Boolean</code> or <code>String</code></p>
 <p>Values: <code>true</code> or <code>&quot;enforceLeadingUnderscore&quot;</code> or <code>&quot;enforceTrailingUnderscore&quot;</code></p>
 <p>Context: <code>functions</code></p>
@@ -3189,7 +3525,7 @@ format: <code>{function(...)}</code></p>
 <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">_f</span>(<span class="hljs-params"></span>) </span>{}
 </code></pre>
 <h3 id="leadingunderscoreaccess">leadingUnderscoreAccess</h3>
-<p>Ensures access declaration is set for <code>_underscored</code> function names</p>
+<p>Checks access declaration is set for <code>_underscored</code> function names</p>
 <p>Ignores a bunch of popular identifiers:
 <code>__filename</code>, <code>__dirname</code>, <code>__proto__</code>, <code>__defineGetter__</code>, <code>super_</code>,
 <code>__constructor</code>, etc.</p>
@@ -3215,9 +3551,23 @@ format: <code>{function(...)}</code></p>
 <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">_e</span>(<span class="hljs-params"></span>) </span>{}
 </code></pre>
 <h3 id="enforceexistence">enforceExistence</h3>
-<p>Ensures jsdoc block exist</p>
-<p>Type: <code>Boolean</code> or <code>String</code></p>
-<p>Values: <code>true</code> or <code>&quot;exceptExports&quot;</code> (skip <code>module.exports = function () {};</code>)</p>
+<p>Checks jsdoc block exists.</p>
+<p>Type: <code>Boolean</code>, <code>String</code> or <code>Object</code></p>
+<p>Values:</p>
+<ul>
+<li><code>true</code></li>
+<li><code>&quot;exceptExports&quot;</code> (<em>deprecated</em> use <code>&quot;allExcept&quot;: [&quot;exports&quot;]</code>)</li>
+<li><code>Object</code>:<ul>
+<li><code>&quot;allExcept&quot;</code> array of exceptions:<ul>
+<li><code>&quot;expressions&quot;</code> skip expression functions</li>
+<li><code>&quot;exports&quot;</code> skip <code>module.exports = function () {};</code></li>
+<li><code>&quot;paramless-procedures&quot;</code> functions without parameters and with empty
+return statements will be skipped</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
 <p>Context: <code>functions</code></p>
 <h4 id="example">Example</h4>
 <pre><code class="lang-js"><span class="hljs-string">"enforceExistence"</span>: <span class="hljs-literal">true</span>
@@ -3232,7 +3582,7 @@ format: <code>{function(...)}</code></p>
 <pre><code class="lang-js"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">_g</span>(<span class="hljs-params"></span>) </span>{}
 </code></pre>
 <h3 id="requirehyphenbeforedescription">requireHyphenBeforeDescription</h3>
-<p>Ensures a param description has a hyphen before it (checks for <code>-</code>)</p>
+<p>Checks a param description has a hyphen before it (checks for <code>-</code>).</p>
 <p>Type: <code>Boolean</code></p>
 <p>Values: <code>true</code></p>
 <p>Context: <code>functions</code></p>
@@ -3253,7 +3603,7 @@ format: <code>{function(...)}</code></p>
 <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">method</span>(<span class="hljs-params"></span>) </span>{}
 </code></pre>
 <h3 id="requirenewlineafterdescription">requireNewlineAfterDescription</h3>
-<p>Ensures a doc comment description has padding newline</p>
+<p>Checks a doc comment description has padding newline.</p>
 <p>Type: <code>Boolean</code></p>
 <p>Values: <code>true</code></p>
 <p>Context: <code>functions</code></p>
@@ -3263,9 +3613,9 @@ format: <code>{function(...)}</code></p>
 </code></pre>
 <h5 id="valid">Valid</h5>
 <pre><code class="lang-js"><span class="hljs-comment">/**
- * @param {String} - message
+ * @param {String} msg - message
  */</span>
-<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">method</span>(<span class="hljs-params"></span>) </span>{}
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">method</span>(<span class="hljs-params">msg</span>) </span>{}
 
 <span class="hljs-comment">/**
  * Description
@@ -3275,9 +3625,9 @@ format: <code>{function(...)}</code></p>
 <span class="hljs-comment">/**
  * Description
  *
- * @param {String} - message
+ * @param {String} msg - message
  */</span>
-<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">method</span>(<span class="hljs-params"></span>) </span>{}
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">method</span>(<span class="hljs-params">msg</span>) </span>{}
 </code></pre>
 <h5 id="invalid">Invalid</h5>
 <pre><code class="lang-js"><span class="hljs-comment">/**
@@ -3287,7 +3637,7 @@ format: <code>{function(...)}</code></p>
 <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">method</span>(<span class="hljs-params"></span>) </span>{}
 </code></pre>
 <h3 id="disallownewlineafterdescription">disallowNewlineAfterDescription</h3>
-<p>Ensures a doc comment description has no padding newlines</p>
+<p>Checks a doc comment description has no padding newlines.</p>
 <p>Type: <code>Boolean</code></p>
 <p>Values: <code>true</code></p>
 <p>Context: <code>functions</code></p>
@@ -3297,9 +3647,9 @@ format: <code>{function(...)}</code></p>
 </code></pre>
 <h5 id="valid">Valid</h5>
 <pre><code class="lang-js"><span class="hljs-comment">/**
- * @param {String} - message
+ * @param {String} msg - message
  */</span>
-<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">method</span>(<span class="hljs-params"></span>) </span>{}
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">method</span>(<span class="hljs-params">msg</span>) </span>{}
 
 <span class="hljs-comment">/**
  * Description
@@ -3308,9 +3658,9 @@ format: <code>{function(...)}</code></p>
 
 <span class="hljs-comment">/**
  * Description
- * @param {String} - message
+ * @param {String} msg - message
  */</span>
-<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">method</span>(<span class="hljs-params"></span>) </span>{}
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">method</span>(<span class="hljs-params">msg</span>) </span>{}
 </code></pre>
 <h5 id="invalid">Invalid</h5>
 <pre><code class="lang-js"><span class="hljs-comment">/**
@@ -3318,12 +3668,12 @@ format: <code>{function(...)}</code></p>
  *
  * @param {String} message
  */</span>
-<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">method</span>(<span class="hljs-params"></span>) </span>{}
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">method</span>(<span class="hljs-params">message</span>) </span>{}
 </code></pre>
 <h3 id="requiredescriptioncompletesentence">requireDescriptionCompleteSentence</h3>
-<p>Ensures a doc comment description is a complete sentence.</p>
-<p>A complete sentence is defined as starting with an upper case letter and
-ending with a period.</p>
+<p>Checks a doc comment description is a complete sentence.</p>
+<p>A complete sentence is defined as starting with an upper case letter and ending
+with a period.</p>
 <p>Type: <code>Boolean</code></p>
 <p>Values: <code>true</code></p>
 <p>Context: <code>functions</code></p>
@@ -3333,34 +3683,47 @@ ending with a period.</p>
 </code></pre>
 <h5 id="valid">Valid</h5>
 <pre><code class="lang-js"><span class="hljs-comment">/**
- * @param {String} - message
+ * @param {String} msg - message
+ */</span>
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">method</span>(<span class="hljs-params">msg</span>) </span>{}
+
+<span class="hljs-comment">/**
+ * Description.
  */</span>
 <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">method</span>(<span class="hljs-params"></span>) </span>{}
 
 <span class="hljs-comment">/**
- * Description.
+ * (Description).
  */</span>
 <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">method</span>(<span class="hljs-params"></span>) </span>{}
 
 <span class="hljs-comment">/**
  * Description.
  *
- * @param {String} - message
+ * @param {String} msg - message
  */</span>
-<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">method</span>(<span class="hljs-params"></span>) </span>{}
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">method</span>(<span class="hljs-params">msg</span>) </span>{}
 
 <span class="hljs-comment">/**
  * Description
- * On multiple lines.
+ * on multiple lines are allowed.
  *
- * @param {String} - message
+ * @param {String} msg - message
  */</span>
-<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">method</span>(<span class="hljs-params"></span>) </span>{}
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">method</span>(<span class="hljs-params">msg</span>) </span>{}
 </code></pre>
 <h5 id="invalid">Invalid</h5>
 <pre><code class="lang-js"><span class="hljs-comment">/**
  * Description
  * @param {String} message
+ */</span>
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">method</span>(<span class="hljs-params"></span>) </span>{}
+
+<span class="hljs-comment">/**
+ * Description
+ * On multiple lines should not start with an upper case.
+ *
+ * @param {String} - message
  */</span>
 <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">method</span>(<span class="hljs-params"></span>) </span>{}
 
@@ -3383,7 +3746,7 @@ ending with a period.</p>
 <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">method</span>(<span class="hljs-params"></span>) </span>{}
 </code></pre>
 <h3 id="requireparamdescription">requireParamDescription</h3>
-<p>Ensures a param description exists.</p>
+<p>Checks a param description exists.</p>
 <p>Type: <code>Boolean</code></p>
 <p>Values: <code>true</code></p>
 <p>Context: <code>functions</code></p>
@@ -3413,15 +3776,96 @@ ending with a period.</p>
  */</span>
 <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">method</span>(<span class="hljs-params">arg</span>) </span>{}
 </code></pre>
+<h3 id="requirereturndescription">requireReturnDescription</h3>
+<p>Checks a return description exists.</p>
+<p>Type: <code>Boolean</code></p>
+<p>Values: <code>true</code></p>
+<p>Context: <code>functions</code></p>
+<p>Tags: <code>return</code>, <code>returns</code></p>
+<h4 id="example">Example</h4>
+<pre><code class="lang-js"><span class="hljs-string">"requireReturnDescription"</span>: <span class="hljs-literal">true</span>
+</code></pre>
+<h5 id="valid">Valid</h5>
+<pre><code class="lang-js"><span class="hljs-comment">/**
+ * @returns {Boolean} Method result.
+ */</span>
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">method</span>(<span class="hljs-params"></span>) </span>{
+  <span class="hljs-keyword">return</span> <span class="hljs-literal">false</span>;
+}
+
+<span class="hljs-comment">/**
+ * @returns {String} method result
+ */</span>
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">method</span>(<span class="hljs-params"></span>) </span>{
+  <span class="hljs-keyword">return</span> <span class="hljs-string">'Hello!'</span>;
+}
+</code></pre>
+<h5 id="invalid">Invalid</h5>
+<pre><code class="lang-js"><span class="hljs-comment">/**
+ * @returns {Boolean}
+ */</span>
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">method</span>(<span class="hljs-params"></span>) </span>{
+  <span class="hljs-keyword">return</span> <span class="hljs-literal">false</span>;
+}
+</code></pre>
 <h2 id="maximumnumberoflines">maximumNumberOfLines</h2>
 <p>Requires the file to be at most the number of lines specified</p>
-<p>Type: <code>Integer</code></p>
+<p>Types: <code>Integer</code> or <code>Object</code></p>
 <p>Values:</p>
 <ul>
 <li><code>Integer</code>: file should be at most the number of lines specified</li>
+<li><code>Object</code>:<ul>
+<li><code>value</code>: (required) lines should be at most the number of characters specified</li>
+<li><code>allExcept</code>: (default: <code>[]</code>) an array of conditions that will exempt a line<ul>
+<li><code>comments</code>: allows comments to break the rule
+*<h4 id="example">Example</h4>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<pre><code class="lang-js"><span class="hljs-string">"maximumNumberOfLines"</span>: <span class="hljs-number">100</span>
+</code></pre>
+<h2 id="requirealignedmultilineparams">requireAlignedMultilineParams</h2>
+<p>Enforces indentation of parameters in multiline functions</p>
+<p>Types: <code>Boolean</code>, <code>String</code>, <code>Number</code></p>
+<p>Values:</p>
+<ul>
+<li><code>true</code> to require parameters are aligned with the body of the function</li>
+<li><code>&#39;firstParam&#39;</code> to require parameters to be aligned with the first parameter</li>
+<li><code>Number</code> for the number of columns the parameters should be indented past the function body</li>
 </ul>
 <h4 id="example">Example</h4>
-<pre><code class="lang-js"><span class="hljs-string">"maximumNumberOfLines"</span>: <span class="hljs-number">100</span>
+<pre><code class="lang-js"><span class="hljs-string">"requireAlignedMultilineParams"</span>: <span class="hljs-literal">true</span>
+</code></pre>
+<h5 id="valid-for-true">Valid for <code>true</code></h5>
+<pre><code class="lang-js"><span class="hljs-keyword">var</span> test = <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">one, two,
+  three, four, five,
+  six, seven, eight</span>) </span>{
+  <span class="hljs-built_in">console</span>.log(a);
+};
+</code></pre>
+<h5 id="valid-for-2">Valid for <code>2</code></h5>
+<pre><code class="lang-js"><span class="hljs-keyword">var</span> test = <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">one, two,
+    three, four, five,
+    six, seven, eight</span>) </span>{
+  <span class="hljs-built_in">console</span>.log(a);
+};
+</code></pre>
+<h5 id="valid-for-firstparam">Valid for <code>&#39;firstParam&#39;</code></h5>
+<pre><code class="lang-js"><span class="hljs-keyword">var</span> test = <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">one, two,
+                    three, four, five,
+                    six, seven, eight</span>) </span>{
+  <span class="hljs-built_in">console</span>.log(a);
+};
+</code></pre>
+<h5 id="invalid-for-0">Invalid for <code>0</code></h5>
+<pre><code class="lang-js"><span class="hljs-keyword">var</span> test = <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">one, two,
+    three, four, five,
+    six, seven, eight</span>) </span>{
+  <span class="hljs-built_in">console</span>.log(a);
+};
 </code></pre>
 <h2 id="requirealignedobjectvalues">requireAlignedObjectValues</h2>
 <p>Requires proper alignment in object literals.</p>
@@ -3493,6 +3937,34 @@ $(<span class="hljs-string">'#foo'</span>).click(<span class="hljs-function"><sp
 
 })
 </code></pre>
+<h2 id="requirearraydestructuring">requireArrayDestructuring</h2>
+<p>Requires that variable assignment from array values are * destructured.</p>
+<p>Type: <code>Boolean</code></p>
+<p>Values: <code>true</code></p>
+<p>Version: <code>ES6</code></p>
+<h4 id="example">Example</h4>
+<pre><code class="lang-js"><span class="hljs-string">"requireArrayDestructuring"</span>: <span class="hljs-literal">true</span>
+</code></pre>
+<h5 id="valid">Valid</h5>
+<pre><code class="lang-js"><span class="hljs-keyword">var</span> colors = [<span class="hljs-string">'red'</span>, <span class="hljs-string">'green'</span>, <span class="hljs-string">'blue'</span>];
+<span class="hljs-keyword">var</span> [ red ] = colors;
+
+<span class="hljs-keyword">var</span> attributes = {
+  colors: [<span class="hljs-string">'red'</span>, <span class="hljs-string">'green'</span>, <span class="hljs-string">'blue'</span>];
+};
+
+<span class="hljs-keyword">var</span> [ red ] = attributes.colors;
+</code></pre>
+<h5 id="invalid">Invalid</h5>
+<pre><code class="lang-js"><span class="hljs-keyword">var</span> colors = [<span class="hljs-string">'red'</span>, <span class="hljs-string">'green'</span>, <span class="hljs-string">'blue'</span>];
+<span class="hljs-keyword">var</span> red = colors[<span class="hljs-number">0</span>];
+
+<span class="hljs-keyword">var</span> attributes = {
+  colors: [<span class="hljs-string">'red'</span>, <span class="hljs-string">'green'</span>, <span class="hljs-string">'blue'</span>];
+};
+
+<span class="hljs-keyword">var</span> red = attributes.colors[<span class="hljs-number">0</span>];
+</code></pre>
 <h2 id="requirearrowfunctions">requireArrowFunctions</h2>
 <p>Requires that arrow functions are used instead of anonymous function expressions in callbacks.</p>
 <p>Type: <code>Boolean</code></p>
@@ -3529,19 +4001,21 @@ $(<span class="hljs-string">'#foo'</span>).click(<span class="hljs-function"><sp
 </code></pre>
 <h2 id="requirecapitalizedcomments">requireCapitalizedComments</h2>
 <p>Requires the first alphabetical character of a comment to be uppercase, unless it is part of a multi-line textblock.</p>
-<p>By default, the prefix for inline comments <code>jscs</code> is ignored.</p>
+<p>This rule automatically ignores jscs, jshint, eslint and istanbul specific comments.</p>
 <p>Types: <code>Boolean</code> or <code>Object</code></p>
 <p>Values:</p>
 <ul>
 <li><code>true</code></li>
 <li><code>Object</code>:<ul>
 <li><code>allExcept</code>: array of quoted exceptions</li>
+<li><code>inlined</code>: Ignore comments in the middle of the code line</li>
 </ul>
 </li>
 </ul>
 <h4 id="example">Example</h4>
-<p><code>&quot;requireCapitalizedComments&quot;: true</code></p>
-<p>Valid:</p>
+<pre><code class="lang-js"><span class="hljs-string">"requireCapitalizedComments"</span>: <span class="hljs-literal">true</span>
+</code></pre>
+<h5 id="valid">Valid:</h5>
 <pre><code class="lang-js"><span class="hljs-comment">// Valid</span>
 <span class="hljs-comment">//Valid</span>
 
@@ -3560,12 +4034,14 @@ $(<span class="hljs-string">'#foo'</span>).click(<span class="hljs-function"><sp
 
 <span class="hljs-comment">// A textblock may also have multiple lines.</span>
 <span class="hljs-comment">// Those lines can be uppercase as well to support</span>
-<span class="hljs-comment">// sentense breaks in textblocks</span>
+<span class="hljs-comment">// sentence breaks in textblocks</span>
 
 <span class="hljs-comment">// 123 or any non-alphabetical starting character</span>
 <span class="hljs-comment">// @are also valid anywhere</span>
+
+<span class="hljs-comment">// jscs: enable</span>
 </code></pre>
-<p>Invalid:</p>
+<h5 id="invalid">Invalid:</h5>
 <pre><code class="lang-js"><span class="hljs-comment">// invalid</span>
 <span class="hljs-comment">//invalid</span>
 <span class="hljs-comment">/** invalid */</span>
@@ -3573,35 +4049,55 @@ $(<span class="hljs-string">'#foo'</span>).click(<span class="hljs-function"><sp
  * invalid
  */</span>
 </code></pre>
-<pre><code class="lang-js"><span class="hljs-string">"requireCapitalizedComments"</span>: { <span class="hljs-string">"allExcept"</span>: [<span class="hljs-string">"jshint"</span>] }
+<pre><code class="lang-js"><span class="hljs-string">"requireCapitalizedComments"</span>: { <span class="hljs-string">"allExcept"</span>: [<span class="hljs-string">"pragma"</span>] }
 </code></pre>
-<p>Valid:</p>
+<h5 id="valid">Valid:</h5>
 <pre><code class="lang-js"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">sayHello</span>(<span class="hljs-params"></span>) </span>{
-    <span class="hljs-comment">/* jshint: -W071 */</span>
+    <span class="hljs-comment">/* pragma something */</span>
 
     <span class="hljs-comment">// I can now say hello in lots of statements, if I like.</span>
     <span class="hljs-keyword">return</span> <span class="hljs-string">"Hello"</span>;
 }
 </code></pre>
-<ul>
-<li>Invalid:</li>
-</ul>
-<pre><code class="lang-js"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">sayHello</span>(<span class="hljs-params"></span>) </span>{
-    <span class="hljs-comment">/* jshint: -W071 */</span>
-
-    <span class="hljs-comment">// i can now say hello in lots of statements, if I like.</span>
-    <span class="hljs-keyword">return</span> <span class="hljs-string">"Hello"</span>;
-}
-</code></pre>
-<ul>
-<li>Invalid:</li>
-</ul>
+<h5 id="valid">Valid:</h5>
 <pre><code class="lang-js"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">sayHello</span>(<span class="hljs-params"></span>) </span>{
     <span class="hljs-comment">/* istanbul ignore next */</span>
 
     <span class="hljs-comment">// I'd like to ignore this statement in coverage reports.</span>
     <span class="hljs-keyword">return</span> <span class="hljs-string">"Hello"</span>;
 }
+</code></pre>
+<h5 id="invalid">Invalid:</h5>
+<pre><code class="lang-js"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">sayHello</span>(<span class="hljs-params"></span>) </span>{
+    <span class="hljs-comment">/* otherPragma something */</span>
+
+    <span class="hljs-comment">// i can now say hello in lots of statements, if I like.</span>
+    <span class="hljs-keyword">return</span> <span class="hljs-string">"Hello"</span>;
+}
+</code></pre>
+<pre><code class="lang-js"><span class="hljs-string">"requireCapitalizedComments"</span>: { <span class="hljs-string">"inlined"</span>: <span class="hljs-literal">true</span> }
+</code></pre>
+<h5 id="valid">Valid:</h5>
+<pre><code class="lang-js"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">sayHello</span>(<span class="hljs-params"> world <span class="hljs-comment">/*internal*/</span> </span>) </span>{
+}
+</code></pre>
+<h2 id="requirecapitalizedconstructorsnew">requireCapitalizedConstructorsNew</h2>
+<p>Requires capitalized constructors to to use the <code>new</code> keyword</p>
+<p>Types: <code>Boolean</code> or <code>Object</code></p>
+<p>Values: <code>true</code> or Object with <code>allExcept</code> Array of quoted identifiers which are exempted</p>
+<p>JSHint: <a href="http://jshint.com/docs/options/#newcap"><code>newcap</code></a></p>
+<h4 id="example">Example</h4>
+<pre><code class="lang-js"><span class="hljs-string">"requireCapitalizedConstructorsNew"</span>: <span class="hljs-literal">true</span>
+<span class="hljs-string">"requireCapitalizedConstructorsNew"</span>: {
+    <span class="hljs-string">"allExcept"</span>: [<span class="hljs-string">"SomethingNative"</span>]
+}
+</code></pre>
+<h5 id="valid">Valid</h5>
+<pre><code class="lang-js"><span class="hljs-keyword">var</span> a = <span class="hljs-keyword">new</span> B();
+<span class="hljs-keyword">var</span> c = SomethingNative();
+</code></pre>
+<h5 id="invalid">Invalid</h5>
+<pre><code class="lang-js"><span class="hljs-keyword">var</span> d = E();
 </code></pre>
 <h2 id="requiredollarbeforejqueryassignment">requireDollarBeforejQueryAssignment</h2>
 <p>Require a $ before variable names that are jquery assignments.</p>
@@ -3630,6 +4126,55 @@ $(<span class="hljs-string">'#foo'</span>).click(<span class="hljs-function"><sp
 </code></pre>
 <h5 id="invalid-example-for-mode-ignoreproperties">Invalid example for mode <code>ignoreProperties</code></h5>
 <pre><code class="lang-js"><span class="hljs-keyword">var</span> x = $(<span class="hljs-string">".foo"</span>);
+</code></pre>
+<h2 id="requireearlyreturn">requireEarlyReturn</h2>
+<p>Requires to return early in a function.</p>
+<p>Types: <code>Boolean</code></p>
+<p>Values:</p>
+<ul>
+<li><code>true</code>: disallow to use of else if the corrisponding <code>if</code> block contain a return.</li>
+</ul>
+<h4 id="example">Example</h4>
+<pre><code class="lang-js"><span class="hljs-string">"requireEarlyReturn"</span>: <span class="hljs-literal">true</span>
+</code></pre>
+<h5 id="valid">Valid</h5>
+<pre><code class="lang-js"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">test</span>(<span class="hljs-params"></span>) </span>{
+    <span class="hljs-keyword">if</span> (x) {
+        <span class="hljs-keyword">return</span> x;
+    }
+    <span class="hljs-keyword">return</span> y;
+}
+</code></pre>
+<h5 id="invalid">Invalid</h5>
+<pre><code class="lang-js"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">test</span>(<span class="hljs-params"></span>) </span>{
+    <span class="hljs-keyword">if</span> (x) {
+        <span class="hljs-keyword">return</span> x;
+    } <span class="hljs-keyword">else</span> {
+        <span class="hljs-keyword">return</span> y;
+    }
+}
+</code></pre>
+<h2 id="requireenhancedobjectliterals">requireEnhancedObjectLiterals</h2>
+<p>Requires declaring objects via ES6 enhanced object literals</p>
+<p>Type: <code>Boolean</code></p>
+<p>Values: true</p>
+<p>Version: <code>ES6</code></p>
+<h4 id="example">Example</h4>
+<pre><code class="lang-js"><span class="hljs-string">"requireEnhancedObjectLiterals"</span>: <span class="hljs-literal">true</span>
+</code></pre>
+<h5 id="valid">Valid</h5>
+<pre><code class="lang-js"><span class="hljs-keyword">var</span> bar = <span class="hljs-literal">true</span>;
+<span class="hljs-keyword">var</span> obj = {
+  foo() { },
+  bar
+};
+</code></pre>
+<h5 id="invalid">Invalid</h5>
+<pre><code class="lang-js"><span class="hljs-keyword">var</span> bar = <span class="hljs-literal">true</span>;
+<span class="hljs-keyword">var</span> obj = {
+  foo: <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{ },
+  bar: bar
+};
 </code></pre>
 <h2 id="requirefunctiondeclarations">requireFunctionDeclarations</h2>
 <p>Requires function declarations by disallowing assignment of functions
@@ -3669,6 +4214,23 @@ $(<span class="hljs-string">'#foo'</span>).click(<span class="hljs-function"><sp
 <span class="hljs-keyword">var</span> expressed = <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">deeply</span>(<span class="hljs-params"></span>) </span>{
 
 };
+</code></pre>
+<h2 id="requireimportalphabetized">requireImportAlphabetized</h2>
+<p>Requires imports to be alphabetised</p>
+<p>Types: <code>Boolean</code></p>
+<p>Values: <code>true</code> to require imports to be ordered (A-Z)</p>
+<h4 id="example">Example</h4>
+<pre><code class="lang-js"><span class="hljs-string">"requireImportAlphabetized"</span>: <span class="hljs-literal">true</span>
+</code></pre>
+<h5 id="valid">Valid</h5>
+<pre><code class="lang-js"><span class="hljs-keyword">import</span> a <span class="hljs-keyword">from</span> <span class="hljs-string">'a'</span>;
+<span class="hljs-keyword">import</span> c <span class="hljs-keyword">from</span> <span class="hljs-string">'c'</span>;
+<span class="hljs-keyword">import</span> z <span class="hljs-keyword">from</span> <span class="hljs-string">'z'</span>;
+</code></pre>
+<h5 id="invalid">Invalid</h5>
+<pre><code class="lang-js"><span class="hljs-keyword">import</span> a <span class="hljs-keyword">from</span> <span class="hljs-string">'a'</span>;
+<span class="hljs-keyword">import</span> z <span class="hljs-keyword">from</span> <span class="hljs-string">'z'</span>;
+<span class="hljs-keyword">import</span> c <span class="hljs-keyword">from</span> <span class="hljs-string">'c'</span>;
 </code></pre>
 <h2 id="requirekeywordsonnewline">requireKeywordsOnNewLine</h2>
 <p>Requires placing keywords on a new line.</p>
@@ -3721,9 +4283,10 @@ $(<span class="hljs-string">'#foo'</span>).click(<span class="hljs-function"><sp
 <h2 id="requirematchingfunctionname">requireMatchingFunctionName</h2>
 <p>Requires function names to match member and property names.</p>
 <p>It doesn&#39;t affect anonymous functions nor functions assigned to members or
-properties named with a reserved word.</p>
-<p>Type: <code>Boolean</code></p>
-<p>Value: <code>true</code></p>
+properties named with a reserved word. Assigning to <code>module.exports</code> is also
+ignored, unless <code>includeModuleExports: true</code> is configured.</p>
+<p>Types: <code>Boolean</code> or <code>Object</code></p>
+<p>Values: <code>true</code> or Object with <code>includeModuleExports: true</code></p>
 <h4 id="example">Example</h4>
 <pre><code class="lang-js"><span class="hljs-string">"requireMatchingFunctionName"</span>: <span class="hljs-literal">true</span>
 </code></pre>
@@ -3736,6 +4299,10 @@ test[<span class="hljs-string">'foo'</span>] = <span class="hljs-function"><span
 </code></pre>
 <pre><code class="lang-js"><span class="hljs-keyword">var</span> test = {foo: <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">foo</span>(<span class="hljs-params"></span>) </span>{}};
 </code></pre>
+<pre><code class="lang-js"><span class="hljs-built_in">module</span>.exports = <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">foo</span>(<span class="hljs-params"></span>) </span>{};
+</code></pre>
+<pre><code class="lang-js"><span class="hljs-built_in">module</span>[<span class="hljs-string">'exports'</span>] = <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">foo</span>(<span class="hljs-params"></span>) </span>{};
+</code></pre>
 <h5 id="invalid">Invalid</h5>
 <pre><code class="lang-js"><span class="hljs-keyword">var</span> test = {};
 test.foo = <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">bar</span>(<span class="hljs-params"></span>) </span>{};
@@ -3744,6 +4311,31 @@ test.foo = <span class="hljs-function"><span class="hljs-keyword">function</span
 test[<span class="hljs-string">'foo'</span>] = <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">bar</span>(<span class="hljs-params"></span>) </span>{};
 </code></pre>
 <pre><code class="lang-js"><span class="hljs-keyword">var</span> test = {foo: <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">bar</span>(<span class="hljs-params"></span>) </span>{}};
+</code></pre>
+<pre><code class="lang-js"><span class="hljs-keyword">var</span> test = {<span class="hljs-built_in">module</span>: {}};
+test.module.exports = <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">foo</span>(<span class="hljs-params"></span>) </span>{};
+</code></pre>
+<h4 id="example">Example</h4>
+<pre><code class="lang-js"><span class="hljs-string">"requireMatchingFunctionName"</span>: { <span class="hljs-string">"includeModuleExports"</span>: <span class="hljs-literal">true</span> }
+</code></pre>
+<h5 id="invalid">Invalid</h5>
+<pre><code class="lang-js"><span class="hljs-built_in">module</span>.exports = <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">foo</span>(<span class="hljs-params"></span>) </span>{};
+</code></pre>
+<pre><code class="lang-js"><span class="hljs-built_in">module</span>[<span class="hljs-string">'exports'</span>] = <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">foo</span>(<span class="hljs-params"></span>) </span>{};
+</code></pre>
+<h2 id="requiremultilineternary">requireMultiLineTernary</h2>
+<p>Requires the test, consequent and alternate to be on separate lines when using the ternary operator.</p>
+<p>Types: <code>Boolean</code></p>
+<h4 id="example">Example</h4>
+<pre><code class="lang-js"><span class="hljs-string">"requireMultiLineTernary"</span>: <span class="hljs-literal">true</span>
+</code></pre>
+<h5 id="valid">Valid</h5>
+<pre><code class="lang-js"><span class="hljs-keyword">var</span> foo = (a === b)
+  ? <span class="hljs-number">1</span>
+  : <span class="hljs-number">2</span>;
+</code></pre>
+<h5 id="invalid">Invalid</h5>
+<pre><code class="lang-js"><span class="hljs-keyword">var</span> foo = (a === b) ? <span class="hljs-number">1</span> : <span class="hljs-number">2</span>;
 </code></pre>
 <h2 id="requiremultiplevardecl">requireMultipleVarDecl</h2>
 <p>Requires multiple <code>var</code> declaration.</p>
@@ -3801,7 +4393,7 @@ before(<span class="hljs-function"><span class="hljs-keyword">function</span> (<
 <ul>
 <li><code>true</code> always requires newline before curly brace of block statements</li>
 <li><code>Array</code> specifies block-type keywords after which newlines are required before curly brace<ul>
-<li>Valid types include: <code>[&#39;if&#39;, &#39;else&#39;, &#39;try&#39;, &#39;catch&#39;, &#39;finally&#39;, &#39;do&#39;, &#39;while&#39;, &#39;for&#39;, &#39;function&#39;]</code></li>
+<li>Valid types include: <code>[&#39;if&#39;, &#39;else&#39;, &#39;try&#39;, &#39;catch&#39;, &#39;finally&#39;, &#39;do&#39;, &#39;while&#39;, &#39;for&#39;, &#39;function&#39;, &#39;switch&#39;]</code></li>
 </ul>
 </li>
 </ul>
@@ -3930,6 +4522,34 @@ before(<span class="hljs-function"><span class="hljs-keyword">function</span> (<
     <span class="hljs-keyword">return</span> x - <span class="hljs-number">1</span>;
 }
 </code></pre>
+<h2 id="requirenewlinebeforesinglestatementsinif">requireNewlineBeforeSingleStatementsInIf</h2>
+<p>Requires newline before single if statements</p>
+<p>Type: <code>Boolean</code></p>
+<p>Value: <code>true</code></p>
+<h4 id="example">Example</h4>
+<pre><code class="lang-js"><span class="hljs-string">"requireNewlineBeforeSingleStatementsInIf"</span>: <span class="hljs-literal">true</span>
+</code></pre>
+<h5 id="valid">Valid</h5>
+<pre><code class="lang-js"><span class="hljs-keyword">if</span> (x)
+   doX();
+<span class="hljs-keyword">else</span>
+   doY();
+
+<span class="hljs-keyword">if</span> (x)
+   doX();
+<span class="hljs-keyword">else</span> <span class="hljs-keyword">if</span> (v)
+   doV();
+<span class="hljs-keyword">else</span>
+   doY();
+</code></pre>
+<h5 id="invalid">Invalid</h5>
+<pre><code class="lang-js"><span class="hljs-keyword">if</span> (x) doX();
+<span class="hljs-keyword">else</span> doY();
+
+<span class="hljs-keyword">if</span> (x) doX();
+<span class="hljs-keyword">else</span> <span class="hljs-keyword">if</span> (v) doV();
+<span class="hljs-keyword">else</span> doY();
+</code></pre>
 <h2 id="requirenumericliterals">requireNumericLiterals</h2>
 <p>Requires use of binary, hexadecimal, and octal literals instead of parseInt.</p>
 <p>Type: <code>Boolean</code></p>
@@ -3948,12 +4568,43 @@ before(<span class="hljs-function"><span class="hljs-keyword">function</span> (<
 <span class="hljs-built_in">parseInt</span>(<span class="hljs-string">"767"</span>, <span class="hljs-number">8</span>) === <span class="hljs-number">503</span>;
 <span class="hljs-built_in">parseInt</span>(<span class="hljs-string">"1F7"</span>, <span class="hljs-number">16</span>) === <span class="hljs-number">255</span>;
 </code></pre>
-<h2 id="requireobjectkeysonnewline">requireObjectKeysOnNewLine</h2>
-<p>Requires placing object keys on new line</p>
+<h2 id="requireobjectdestructuring">requireObjectDestructuring</h2>
+<p>Requires variable declarations from objects via destructuring</p>
 <p>Type: <code>Boolean</code></p>
 <p>Value: <code>true</code></p>
+<p>Version: <code>ES6</code></p>
+<h4 id="example">Example</h4>
+<pre><code class="lang-js"><span class="hljs-string">"requireObjectDestructuring"</span>: <span class="hljs-literal">true</span>
+</code></pre>
+<h5 id="valid">Valid</h5>
+<pre><code class="lang-js"><span class="hljs-keyword">var</span> { foo } = SomeThing;
+<span class="hljs-keyword">var</span> { bar } = SomeThing.foo;
+<span class="hljs-keyword">var</span> { val } = SomeThing[<span class="hljs-string">'some.key'</span>];
+</code></pre>
+<h5 id="invalid">Invalid</h5>
+<pre><code class="lang-js"><span class="hljs-keyword">var</span> foo = SomeThing.foo;
+<span class="hljs-keyword">var</span> bar = SomeThing.foo.bar;
+<span class="hljs-keyword">var</span> val = SomeThing[<span class="hljs-string">'some.key'</span>].val;
+</code></pre>
+<h2 id="requireobjectkeysonnewline">requireObjectKeysOnNewLine</h2>
+<p>Requires placing object keys on new line</p>
+<p>Types: <code>Boolean</code> or <code>Object</code></p>
+<p>Values:</p>
+<ul>
+<li><code>true</code></li>
+<li><code>Object</code>:<ul>
+<li><code>&#39;allExcept&#39;</code> array of exceptions:<ul>
+<li><code>&#39;sameLine&#39;</code> ignores the rule if all the keys and values are on the same line</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
 <h4 id="example">Example</h4>
 <pre><code class="lang-js"><span class="hljs-string">"requireObjectKeysOnNewLine"</span>: <span class="hljs-literal">true</span>
+<span class="hljs-string">"requireObjectKeysOnNewLine"</span>: {
+    <span class="hljs-string">"allExcept"</span>: [<span class="hljs-string">"sameLine"</span>]
+}
 </code></pre>
 <h5 id="valid">Valid</h5>
 <pre><code class="lang-js"><span class="hljs-keyword">var</span> a = {
@@ -3964,6 +4615,17 @@ before(<span class="hljs-function"><span class="hljs-keyword">function</span> (<
 <h5 id="invalid">Invalid</h5>
 <pre><code class="lang-js"><span class="hljs-keyword">var</span> a = {
     b: <span class="hljs-string">'b'</span>, c: <span class="hljs-string">'c'</span>
+};
+</code></pre>
+<h5 id="valid-for-allexcept-sameline">Valid for <code>{ &quot;allExcept&quot;: [&quot;sameLine&quot;] }</code></h5>
+<pre><code class="lang-js"><span class="hljs-keyword">var</span> a = {
+    b: <span class="hljs-string">'b'</span>, c: <span class="hljs-string">'c'</span>
+};
+</code></pre>
+<h5 id="invalid-for-allexcept-sameline">Invalid for <code>{ &quot;allExcept&quot;: [&quot;sameLine&quot;] }</code></h5>
+<pre><code class="lang-js"><span class="hljs-keyword">var</span> a = {
+    b: <span class="hljs-string">'b'</span>, c: <span class="hljs-string">'c'</span>,
+    d: <span class="hljs-string">'d'</span>
 };
 </code></pre>
 <h2 id="requirepaddingnewlineaftervariabledeclaration">requirePaddingNewLineAfterVariableDeclaration</h2>
@@ -4128,10 +4790,19 @@ foo({a:{b:<span class="hljs-number">1</span>}});
 <pre><code class="lang-js"><span class="hljs-keyword">var</span> a = <span class="hljs-number">2</span>;
 
 <span class="hljs-built_in">module</span>.exports = a;
+
+<span class="hljs-keyword">if</span> (cond) {
+   <span class="hljs-built_in">module</span>.exports = a;
+}
 </code></pre>
 <h5 id="invalid">Invalid</h5>
 <pre><code class="lang-js"><span class="hljs-keyword">var</span> a = <span class="hljs-number">2</span>;
 <span class="hljs-built_in">module</span>.exports = a;
+
+<span class="hljs-keyword">if</span> (cond) {
+   foo();
+   <span class="hljs-built_in">module</span>.exports = a;
+}
 </code></pre>
 <h2 id="requirepaddingnewlinesbeforekeywords">requirePaddingNewlinesBeforeKeywords</h2>
 <p>Requires an empty line above the specified keywords unless the keyword is the first expression in a block.</p>
@@ -4426,6 +5097,36 @@ evens.map(v =&gt; {
 <h5 id="invalid">Invalid</h5>
 <pre><code class="lang-js">evens.map(v =&gt; { <span class="hljs-keyword">return</span> v + <span class="hljs-number">1</span>; });
 </code></pre>
+<h2 id="requirespaceaftercomma">requireSpaceAfterComma</h2>
+<p>Requires space after comma</p>
+<p>Types: <code>Boolean</code>, or <code>Object</code></p>
+<p>Values:</p>
+<ul>
+<li><code>Boolean</code>: <code>true</code> to require a space after any comma</li>
+<li><code>Object</code>:<ul>
+<li><code>&quot;allExcept&quot;</code> array of exceptions:<ul>
+<li><code>&quot;trailing&quot;</code> ignore trailing commas</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h4 id="example">Example</h4>
+<pre><code class="lang-js"><span class="hljs-string">"requireSpaceAfterComma"</span>: <span class="hljs-literal">true</span>
+</code></pre>
+<pre><code>&quot;requireSpaceAfterComma&quot;: {&quot;allExcept&quot;: [&quot;trailing&quot;]}
+</code></pre><h5 id="valid-for-mode-true">Valid for mode <code>true</code></h5>
+<pre><code class="lang-js"><span class="hljs-keyword">var</span> a, b;
+</code></pre>
+<h5 id="invalid-for-mode-true">Invalid for mode <code>true</code></h5>
+<pre><code class="lang-js"><span class="hljs-keyword">var</span> a,b;
+</code></pre>
+<h5 id="valid-for-mode-allexcept-trailing">Valid for mode <code>{&quot;allExcept&quot;: [&quot;trailing&quot;]}</code></h5>
+<pre><code class="lang-js"><span class="hljs-keyword">var</span> a = [<span class="hljs-number">1</span>, <span class="hljs-number">2</span>,];
+</code></pre>
+<h5 id="invalid-for-mode-allexcept-trailing">Invalid for mode <code>{&quot;allExcept&quot;: [&quot;trailing&quot;]}</code></h5>
+<pre><code class="lang-js"><span class="hljs-keyword">var</span> a = [a,b,];
+</code></pre>
 <h2 id="requirespaceafterlinecomment">requireSpaceAfterLineComment</h2>
 <p>Requires that a line comment (<code>//</code>) be followed by a space.</p>
 <p>Types: <code>Boolean</code>, <code>Object</code> or <code>String</code></p>
@@ -4489,10 +5190,32 @@ evens.map(v =&gt; {
 <h5 id="invalid">Invalid</h5>
 <pre><code class="lang-js"><span class="hljs-keyword">var</span> a,b;
 </code></pre>
+<h2 id="requirespacebeforedestructuredvalues">requireSpaceBeforeDestructuredValues</h2>
+<p>Require space after colon in object destructuring.</p>
+<p>Type: <code>Boolean</code></p>
+<p>Value: <code>true</code></p>
+<p>Version: <code>ES6</code></p>
+<h4 id="example">Example</h4>
+<pre><code class="lang-js"><span class="hljs-string">"requireSpaceBeforeDestructuredValues"</span>: <span class="hljs-literal">true</span>
+</code></pre>
+<h5 id="valid">Valid</h5>
+<pre><code class="lang-js"><span class="hljs-keyword">const</span> { foo: objectsFoo } = SomeObject;
+</code></pre>
+<h5 id="invalid">Invalid</h5>
+<pre><code class="lang-js"><span class="hljs-keyword">const</span> { foo:objectsFoo } = SomeObject;
+</code></pre>
+<h5 id="valid">Valid</h5>
+<pre><code class="lang-js"><span class="hljs-keyword">const</span> { [ { foo: objectsFoo } ] } = SomeObject;
+</code></pre>
+<h5 id="invalid">Invalid</h5>
+<pre><code class="lang-js"><span class="hljs-keyword">const</span> { [ { foo:objectsFoo } ] } = SomeObject;
+</code></pre>
 <h2 id="requirespacebeforekeywords">requireSpaceBeforeKeywords</h2>
 <p>Requires space before keyword.</p>
-<p>Types: <code>Array</code> or <code>Boolean</code></p>
-<p>Values: Array of quoted keywords or <code>true</code> to require all possible keywords to have a preceding space.</p>
+<p>Types: <code>Array</code>, <code>Boolean</code> or <code>Object</code></p>
+<p>Values: <code>true</code> to require all possible keywords to have a preceding space (except <code>function</code>),
+Array of quoted keywords
+or an Object with the <code>allExcept</code> property set with an Array of quoted keywords.</p>
 <h4 id="example">Example</h4>
 <pre><code class="lang-js"><span class="hljs-string">"requireSpaceBeforeKeywords"</span>: [
     <span class="hljs-string">"else"</span>,
@@ -4595,24 +5318,61 @@ Child properties must be set to <code>true</code>.</p>
 <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">a</span>(<span class="hljs-params"></span>)</span>{}
 </code></pre>
 <h2 id="requirespacesinfunction">requireSpacesInFunction</h2>
-<p>Expression</p>
 <p>Requires space before <code>()</code> or <code>{}</code> in function expressions (both <a href="#requirespacesinnamedfunctionexpression">named</a>
 and <a href="#requirespacesinanonymousfunctionexpression">anonymous</a>) and function declarations.</p>
-<p>Type: <code>Object</code></p>
-<p>Values: <code>&quot;beforeOpeningRoundBrace&quot;</code> and <code>&quot;beforeOpeningCurlyBrace&quot;</code> as child properties.
-Child properties must be set to <code>true</code>.</p>
+<p>Types: <code>Object</code></p>
+<ul>
+<li><code>Object</code> (at least one of properties must be present and it must be set to true):<ul>
+<li><code>&#39;beforeOpeningRoundBrace&#39;</code><ul>
+<li><code>true</code> validates that there is a space before <code>()</code></li>
+</ul>
+</li>
+<li><code>&#39;beforeOpeningCurlyBrace&#39;</code><ul>
+<li><code>true</code> validates that there is a space before <code>{}</code></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
 <h4 id="example">Example</h4>
 <pre><code class="lang-js"><span class="hljs-string">"requireSpacesInFunction"</span>: {
     <span class="hljs-string">"beforeOpeningRoundBrace"</span>: <span class="hljs-literal">true</span>,
     <span class="hljs-string">"beforeOpeningCurlyBrace"</span>: <span class="hljs-literal">true</span>
 }
 </code></pre>
-<h5 id="valid">Valid</h5>
+<pre><code class="lang-js"><span class="hljs-string">"requireSpacesInFunction"</span>: {
+    <span class="hljs-string">"beforeOpeningRoundBrace"</span>: <span class="hljs-literal">true</span>
+}
+</code></pre>
+<pre><code class="lang-js"><span class="hljs-string">"requireSpacesInFunction"</span>: {
+    <span class="hljs-string">"beforeOpeningCurlyBrace"</span>: <span class="hljs-literal">true</span>
+}
+</code></pre>
+<h5 id="valid-for-mode-beforeopeningroundbrace-true-beforeopeningcurlybrace-true">Valid for mode <code>{ &quot;beforeOpeningRoundBrace&quot;: true, &quot;beforeOpeningCurlyBrace&quot;: true }</code></h5>
 <pre><code class="lang-js"><span class="hljs-keyword">var</span> x = <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params"></span>) </span>{};
 <span class="hljs-keyword">var</span> x = <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">a</span> (<span class="hljs-params"></span>) </span>{};
 <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">a</span> (<span class="hljs-params"></span>) </span>{}
+<span class="hljs-keyword">var</span> x = <span class="hljs-keyword">async</span> <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params"></span>) </span>{};
+<span class="hljs-keyword">var</span> x = <span class="hljs-keyword">async</span> <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">a</span> (<span class="hljs-params"></span>) </span>{};
+<span class="hljs-keyword">async</span> <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">a</span> (<span class="hljs-params"></span>) </span>{}
 </code></pre>
-<h5 id="invalid">Invalid</h5>
+<h5 id="valid-for-mode-beforeopeningroundbrace-true">Valid for mode <code>{ &quot;beforeOpeningRoundBrace&quot;: true }</code></h5>
+<pre><code class="lang-js"><span class="hljs-keyword">var</span> x = <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params"></span>)</span>{};
+<span class="hljs-keyword">var</span> x = <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">a</span> (<span class="hljs-params"></span>)</span>{};
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">a</span> (<span class="hljs-params"></span>)</span>{}
+<span class="hljs-keyword">var</span> x = <span class="hljs-keyword">async</span> <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params"></span>)</span>{};
+<span class="hljs-keyword">var</span> x = <span class="hljs-keyword">async</span> <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">a</span> (<span class="hljs-params"></span>)</span>{};
+<span class="hljs-keyword">async</span> <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">a</span> (<span class="hljs-params"></span>)</span>{}
+</code></pre>
+<h5 id="valid-for-mode-beforeopeningcurlybrace-true">Valid for mode <code>{ &quot;beforeOpeningCurlyBrace&quot;: true }</code></h5>
+<pre><code class="lang-js"><span class="hljs-keyword">var</span> x = <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{};
+<span class="hljs-keyword">var</span> x = <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">a</span>(<span class="hljs-params"></span>) </span>{};
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">a</span>(<span class="hljs-params"></span>) </span>{}
+<span class="hljs-keyword">var</span> x = <span class="hljs-keyword">async</span> <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{};
+<span class="hljs-keyword">var</span> x = <span class="hljs-keyword">async</span> <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">a</span>(<span class="hljs-params"></span>) </span>{};
+<span class="hljs-keyword">async</span> <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">a</span>(<span class="hljs-params"></span>) </span>{}
+</code></pre>
+<h5 id="invalid-for-mode-beforeopeningroundbrace-true-beforeopeningcurlybrace-true">Invalid for mode <code>{ &quot;beforeOpeningRoundBrace&quot;: true, &quot;beforeOpeningCurlyBrace&quot;: true }</code></h5>
 <pre><code class="lang-js"><span class="hljs-keyword">var</span> x = <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{};
 <span class="hljs-keyword">var</span> x = <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params"></span>)</span>{};
 <span class="hljs-keyword">var</span> x = <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>)</span>{};
@@ -4622,6 +5382,45 @@ Child properties must be set to <code>true</code>.</p>
 <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">a</span>(<span class="hljs-params"></span>) </span>{}
 <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">a</span> (<span class="hljs-params"></span>)</span>{}
 <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">a</span>(<span class="hljs-params"></span>)</span>{}
+<span class="hljs-keyword">var</span> x = <span class="hljs-keyword">async</span> <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{};
+<span class="hljs-keyword">var</span> x = <span class="hljs-keyword">async</span> <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params"></span>)</span>{};
+<span class="hljs-keyword">var</span> x = <span class="hljs-keyword">async</span> <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>)</span>{};
+<span class="hljs-keyword">var</span> x = <span class="hljs-keyword">async</span> <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">a</span>(<span class="hljs-params"></span>) </span>{};
+<span class="hljs-keyword">var</span> x = <span class="hljs-keyword">async</span> <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">a</span> (<span class="hljs-params"></span>)</span>{};
+<span class="hljs-keyword">var</span> x = <span class="hljs-keyword">async</span> <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">a</span>(<span class="hljs-params"></span>)</span>{};
+<span class="hljs-keyword">async</span> <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">a</span>(<span class="hljs-params"></span>) </span>{}
+<span class="hljs-keyword">async</span> <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">a</span> (<span class="hljs-params"></span>)</span>{}
+<span class="hljs-keyword">async</span> <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">a</span>(<span class="hljs-params"></span>)</span>{}
+</code></pre>
+<h2 id="requirespacesingenerator">requireSpacesInGenerator</h2>
+<p>Requires space before and after <code>*</code> in generator functions</p>
+<p>Types: <code>Object</code></p>
+<ul>
+<li><code>Object</code> (at least one of properties must be present and it must be set to true):<ul>
+<li><code>&#39;beforeStar&#39;</code><ul>
+<li><code>true</code> validates that there is a space before <code>*</code></li>
+</ul>
+</li>
+<li><code>&#39;afterStar&#39;</code><ul>
+<li><code>true</code> validates that there is a space after <code>*</code></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h4 id="example">Example</h4>
+<pre><code class="lang-js"><span class="hljs-string">"requireSpacesInGenerator"</span>: {
+    <span class="hljs-string">"beforeStar"</span>: <span class="hljs-literal">true</span>,
+    <span class="hljs-string">"afterStar"</span>: <span class="hljs-literal">true</span>
+}
+</code></pre>
+<h5 id="valid-for-mode-beforestar-true-afterstar-true">Valid for mode <code>{ &quot;beforeStar&quot;: true, &quot;afterStar&quot;: true }</code></h5>
+<pre><code class="lang-js"><span class="hljs-keyword">var</span> x = <span class="hljs-function"><span class="hljs-keyword">function</span> * (<span class="hljs-params"></span>) </span>{};
+<span class="hljs-function"><span class="hljs-keyword">function</span> * <span class="hljs-title">a</span>(<span class="hljs-params"></span>) </span>{};
+<span class="hljs-keyword">var</span> x = <span class="hljs-keyword">async</span> <span class="hljs-function"><span class="hljs-keyword">function</span> * (<span class="hljs-params"></span>) </span>{};
+<span class="hljs-keyword">var</span> x = <span class="hljs-keyword">async</span> <span class="hljs-function"><span class="hljs-keyword">function</span> * <span class="hljs-title">a</span> (<span class="hljs-params"></span>) </span>{};
+<span class="hljs-keyword">async</span> <span class="hljs-function"><span class="hljs-keyword">function</span> * <span class="hljs-title">a</span>(<span class="hljs-params"></span>) </span>{}
+<span class="hljs-keyword">var</span> x = <span class="hljs-keyword">async</span> <span class="hljs-function"><span class="hljs-keyword">function</span> * (<span class="hljs-params"></span>)</span>{};
 </code></pre>
 <h2 id="requirespacesinsidearraybrackets">requireSpacesInsideArrayBrackets</h2>
 <p>Requires space after opening array square bracket and before closing.
@@ -4629,14 +5428,24 @@ Reports only on arrays, not on property accessors.
 Use <a href="http://jscs.info/rule/requireSpacesInsideBrackets.html">requireSpacesInsideBrackets</a>
 to report on all brackets.</p>
 <p>Types: <code>String</code> or <code>Object</code></p>
-<p>Values: <code>&quot;all&quot;</code> for strict mode, <code>&quot;allButNested&quot;</code> (<em>deprecated</em> use <code>&quot;allExcept&quot;: [ &quot;[&quot;, &quot;]&quot;]</code>)
-ignores closing brackets in a row.</p>
+<p>Values:</p>
+<ul>
+<li><code>String</code><ul>
+<li><code>&quot;all&quot;</code>: strict mode</li>
+<li><code>&quot;allButNested&quot;</code>: (<em>deprecated</em> use Object version with <code>&quot;allExcept&quot;: [ &quot;[&quot;, &quot;]&quot; ]</code>) ignores nested
+closing brackets in a row</li>
+</ul>
+</li>
+<li><code>Object</code>:<ul>
+<li><code>&quot;allExcept&quot;</code>: Array specifying list of tokens that can occur after an opening square bracket or before a
+closing square bracket without a space</li>
+</ul>
+</li>
+</ul>
 <h4 id="example">Example</h4>
 <pre><code class="lang-js"><span class="hljs-string">"requireSpacesInsideArrayBrackets"</span>: <span class="hljs-string">"all"</span>
-
-<span class="hljs-comment">// or</span>
-
-<span class="hljs-string">"requireSpacesInsideArrayBrackets"</span>: {
+</code></pre>
+<pre><code class="lang-js"><span class="hljs-string">"requireSpacesInsideArrayBrackets"</span>: {
     <span class="hljs-string">"allExcept"</span>: [ <span class="hljs-string">"["</span>, <span class="hljs-string">"]"</span>, <span class="hljs-string">"{"</span>, <span class="hljs-string">"}"</span> ]
 }
 </code></pre>
@@ -4644,10 +5453,10 @@ ignores closing brackets in a row.</p>
 <pre><code class="lang-js"><span class="hljs-keyword">var</span> x = [ <span class="hljs-number">1</span> ];
 <span class="hljs-keyword">var</span> x = a[<span class="hljs-number">1</span>];
 </code></pre>
-<h5 id="valid-for-mode-allbutnested">Valid for mode <code>&quot;allButNested&quot;</code></h5>
+<h5 id="valid-for-mode-allexcept-or-allbutnested">Valid for mode <code>{ &quot;allExcept&quot;: [ &quot;[&quot;, &quot;]&quot; ] }</code> or <code>&quot;allButNested&quot;</code></h5>
 <pre><code class="lang-js"><span class="hljs-keyword">var</span> x = [[ <span class="hljs-number">1</span> ], [ <span class="hljs-number">2</span> ]];
 </code></pre>
-<h5 id="valid-for-mode-allexcept">Valid for mode <code>&quot;allExcept&quot;</code></h5>
+<h5 id="valid-for-mode-allexcept">Valid for mode <code>{ &quot;allExcept&quot;: [ &quot;[&quot;, &quot;]&quot;, &quot;{&quot;, &quot;}&quot; ] }</code></h5>
 <pre><code class="lang-js"><span class="hljs-keyword">var</span> x = [[ <span class="hljs-number">1</span> ], [ <span class="hljs-number">2</span> ]];
 <span class="hljs-keyword">var</span> x = [{ a: <span class="hljs-number">1</span> }, { b: <span class="hljs-number">2</span>}];
 </code></pre>
@@ -4660,14 +5469,22 @@ Reports on all on brackets, even on property accessors.
 Use <a href="http://jscs.info/rule/requireSpacesInsideArrayBrackets.html">requireSpacesInsideArrayBrackets</a>
 to exclude property accessors.</p>
 <p>Types: <code>Boolean</code> or <code>Object</code></p>
-<p>Values: <code>true</code> for strict mode, or <code>&quot;allExcept&quot;: [ &quot;[&quot;, &quot;]&quot;]</code>
-ignores closing brackets in a row.</p>
+<p>Values:</p>
+<ul>
+<li><code>Boolean</code><ul>
+<li><code>true</code>: strict mode</li>
+</ul>
+</li>
+<li><code>Object</code>:<ul>
+<li><code>&quot;allExcept&quot;</code>: Array specifying list of tokens that can occur after an opening square bracket or before a
+closing square bracket without a space</li>
+</ul>
+</li>
+</ul>
 <h4 id="example">Example</h4>
 <pre><code class="lang-js"><span class="hljs-string">"requireSpacesInsideBrackets"</span>: <span class="hljs-literal">true</span>
-
-<span class="hljs-comment">// or</span>
-
-<span class="hljs-string">"requireSpacesInsideBrackets"</span>: {
+</code></pre>
+<pre><code class="lang-js"><span class="hljs-string">"requireSpacesInsideBrackets"</span>: {
     <span class="hljs-string">"allExcept"</span>: [ <span class="hljs-string">"["</span>, <span class="hljs-string">"]"</span>, <span class="hljs-string">"{"</span>, <span class="hljs-string">"}"</span> ]
 }
 </code></pre>
@@ -4684,21 +5501,32 @@ ignores closing brackets in a row.</p>
 </code></pre>
 <h2 id="requirespacesinsideobjectbrackets">requireSpacesInsideObjectBrackets</h2>
 <p>Requires space after opening object curly brace and before closing.</p>
-<p>Types: <code>Object</code> or <code>String</code></p>
-<p>Values: <code>&quot;all&quot;</code> for strict mode, <code>&quot;allButNested&quot;</code> (<em>deprecated</em> use <code>&quot;allExcept&quot;: [&#39;}&#39;]</code>)
-ignores closing brackets in a row.</p>
+<p>Types: <code>String</code> or <code>Object</code></p>
+<p>Values:</p>
+<ul>
+<li><code>String</code><ul>
+<li><code>&quot;all&quot;</code>: strict mode</li>
+<li><code>&quot;allButNested&quot;</code>: (<em>deprecated</em> use Object version with <code>&quot;allExcept&quot;: [&#39;}&#39;]</code>) ignores nested
+closing object braces in a row</li>
+</ul>
+</li>
+<li><code>Object</code>:<ul>
+<li><code>&quot;allExcept&quot;</code>: Array specifying list of tokens that can occur after an opening object brace or before a
+closing object brace without a space</li>
+</ul>
+</li>
+</ul>
 <h4 id="example">Example</h4>
 <pre><code class="lang-js"><span class="hljs-string">"requireSpacesInsideObjectBrackets"</span>: {
     <span class="hljs-string">"allExcept"</span>: [ <span class="hljs-string">"}"</span>, <span class="hljs-string">")"</span> ]
 }
-
-<span class="hljs-comment">// or</span>
-<span class="hljs-string">"requireSpacesInsideObjectBrackets"</span>: <span class="hljs-literal">true</span> | <span class="hljs-string">"all"</span> | <span class="hljs-string">"allButNested"</span>
+</code></pre>
+<pre><code class="lang-js"><span class="hljs-string">"requireSpacesInsideObjectBrackets"</span>: <span class="hljs-string">"all"</span>
 </code></pre>
 <h5 id="valid-for-mode-all">Valid for mode <code>&quot;all&quot;</code></h5>
 <pre><code class="lang-js"><span class="hljs-keyword">var</span> x = { a: { b: <span class="hljs-number">1</span> } };
 </code></pre>
-<h5 id="valid-for-mode-allbutnested">Valid for mode <code>&quot;allButNested&quot;</code></h5>
+<h5 id="valid-for-mode-allexcept-or-allbutnested">Valid for mode <code>{ &quot;allExcept&quot;: [ &quot;}&quot; ] }</code> or <code>&quot;allButNested&quot;</code></h5>
 <pre><code class="lang-js"><span class="hljs-keyword">var</span> x = { a: { b: <span class="hljs-number">1</span> }};
 </code></pre>
 <h5 id="valid-for-mode-allexcept">Valid for mode <code>&quot;allExcept&quot;: [ &quot;}&quot;, &quot;)&quot; ]</code></h5>
@@ -4710,23 +5538,46 @@ ignores closing brackets in a row.</p>
 </code></pre>
 <h2 id="requirespacesinsideparentheses">requireSpacesInsideParentheses</h2>
 <p>Requires space after opening round bracket and before closing.</p>
-<p>Types: <code>Object</code> or <code>String</code></p>
-<p>Values: <code>&quot;all&quot;</code> for strict mode, <code>&quot;allButNested&quot;</code>
-(<em>deprecated</em> use <code>&quot;except&quot;: [&#39;(&#39;, &#39;)&#39;]</code>) ignores nested brackets in a row, you could also specify token exceptions.</p>
+<p>Types: <code>String</code> or <code>Object</code></p>
+<p>Values:</p>
+<ul>
+<li><code>String</code><ul>
+<li><code>&quot;all&quot;</code>: strict mode</li>
+<li><code>&quot;allButNested&quot;</code>: (<em>deprecated</em> use Object version with <code>&quot;except&quot;: [&quot;(&quot;, &quot;)&quot;]</code>) ignores nested brackets
+in a row</li>
+</ul>
+</li>
+<li><code>Object</code>:<ul>
+<li><code>&quot;all&quot;</code>: true</li>
+<li><code>&quot;ignoreParenthesizedExpression&quot;</code>: true</li>
+<li><code>&quot;except&quot;</code>: Array specifying list of tokens that can occur after an opening bracket or before a
+closing bracket without a space</li>
+</ul>
+</li>
+</ul>
 <h4 id="example">Example</h4>
+<pre><code class="lang-js"><span class="hljs-string">"requireSpacesInsideParentheses"</span>: <span class="hljs-string">"all"</span>
+</code></pre>
 <pre><code class="lang-js"><span class="hljs-string">"requireSpacesInsideParentheses"</span>: {
     <span class="hljs-string">"all"</span>: <span class="hljs-literal">true</span>,
-    <span class="hljs-string">"except"</span>: [ <span class="hljs-string">"{"</span>, <span class="hljs-string">"}"</span> ]
+    <span class="hljs-string">"except"</span>: [ <span class="hljs-string">"{"</span>, <span class="hljs-string">"}"</span>, <span class="hljs-string">"\""</span> ]
 }
 </code></pre>
 <h5 id="valid-for-mode-all">Valid for mode <code>&quot;all&quot;</code></h5>
 <pre><code class="lang-js"><span class="hljs-keyword">var</span> x = <span class="hljs-built_in">Math</span>.pow( ( <span class="hljs-number">1</span> + <span class="hljs-number">2</span> ), ( <span class="hljs-number">3</span> + <span class="hljs-number">4</span> ) );
 </code></pre>
-<h5 id="valid-for-mode-allbutnested">Valid for mode <code>&quot;allButNested&quot;</code></h5>
+<h5 id="valid-for-mode-all-true-except-or-allbutnested">Valid for mode <code>{ &quot;all&quot;: true, &quot;except&quot;: [ &quot;(&quot;, &quot;)&quot; ] }</code> or <code>&quot;allButNested&quot;</code></h5>
 <pre><code class="lang-js"><span class="hljs-keyword">var</span> x = <span class="hljs-built_in">Math</span>.pow(( <span class="hljs-number">1</span> + <span class="hljs-number">2</span> ), ( <span class="hljs-number">3</span> + <span class="hljs-number">4</span> ));
 </code></pre>
-<h5 id="valid-for-mode-all-with-except">Valid for mode <code>&quot;all&quot;</code> with <code>except</code></h5>
+<h5 id="valid-for-mode-all-true-ignoreparenthesizedexpression-true">Valid for mode <code>{ &quot;all&quot;: true, &quot;ignoreParenthesizedExpression&quot;: true }</code></h5>
+<pre><code class="lang-js"><span class="hljs-keyword">if</span> ( !(<span class="hljs-string">"foo"</span> <span class="hljs-keyword">in</span> obj) ) {}
+</code></pre>
+<h5 id="valid-for-mode-all-true-except">Valid for mode <code>{ &quot;all&quot;: true, &quot;except&quot;: [ &quot;{&quot;, &quot;}&quot; ] }</code></h5>
 <pre><code class="lang-js"><span class="hljs-keyword">var</span> x = <span class="hljs-built_in">Math</span>.pow( foo({ test: <span class="hljs-number">1</span> }) );
+</code></pre>
+<h5 id="valid-for-mode-all-true-except">Valid for mode <code>{ &quot;all&quot;: true, &quot;except&quot;: [ &quot;\&quot;&quot; ] }</code></h5>
+<pre><code class="lang-js"><span class="hljs-keyword">var</span> x = foo(<span class="hljs-string">"string"</span>);
+<span class="hljs-keyword">var</span> x = foo( <span class="hljs-number">1</span> );
 </code></pre>
 <h5 id="invalid">Invalid</h5>
 <pre><code class="lang-js"><span class="hljs-keyword">var</span> x = <span class="hljs-built_in">Math</span>.pow(<span class="hljs-number">1</span> + <span class="hljs-number">2</span>, <span class="hljs-number">3</span> + <span class="hljs-number">4</span>);
@@ -4763,17 +5614,20 @@ ignores closing brackets in a row.</p>
 </code></pre>
 <h2 id="requirespread">requireSpread</h2>
 <p>Disallows using <code>.apply</code> in favor of the spread operator</p>
-<p>Type: <code>Boolean</code></p>
-<p>Value: <code>true</code></p>
+<p>Types: <code>Boolean</code></p>
+<p>Values:</p>
+<ul>
+<li><code>true</code> specifies that apply <code>.apply</code> is disallowed</li>
+</ul>
 <p>Version: <code>ES6</code></p>
 <h4 id="example">Example</h4>
 <pre><code class="lang-js"><span class="hljs-string">"requireSpread"</span>: <span class="hljs-literal">true</span>
 </code></pre>
-<h5 id="valid">Valid</h5>
+<h5 id="valid-for-mode-true">Valid for mode <code>true</code></h5>
 <pre><code class="lang-js"><span class="hljs-keyword">const</span> wrap = (f, g) =&gt; (...args) =&gt; g(f, ...args)
 instance.method(...args)
 </code></pre>
-<h5 id="invalid">Invalid</h5>
+<h5 id="invalid-for-mode-true">Invalid for mode <code>true</code></h5>
 <pre><code class="lang-js"><span class="hljs-keyword">const</span> wrap = (f, g) =&gt; (...args) =&gt; g.apply(g, [f].concat(args))
 instance.method.apply(instance, args);
 </code></pre>
@@ -4930,9 +5784,15 @@ x = <span class="hljs-number">1</span>;
 </code></pre>
 <h2 id="requireyodaconditions">requireYodaConditions</h2>
 <p>Requires the variable to be the right hand operator when doing a boolean comparison</p>
-<p>Type: <code>Array</code> or <code>Boolean</code></p>
-<p>Values: Array of quoted operators or <code>true</code> to require yoda conditions for most possible comparison operators</p>
+<p>Types: <code>Array</code> or <code>Boolean</code></p>
+<p>Values:</p>
+<ul>
+<li><code>true</code> specifies that yoda conditions are required for most possible comparison operators</li>
+<li><code>Array</code>: represents the list of quoted operators that requires yoda conditions</li>
+</ul>
 <h4 id="example">Example</h4>
+<pre><code class="lang-js"><span class="hljs-string">"requireYodaConditions"</span>: <span class="hljs-literal">true</span>
+</code></pre>
 <pre><code class="lang-js"><span class="hljs-string">"requireYodaConditions"</span>: [
     <span class="hljs-string">"=="</span>,
     <span class="hljs-string">"==="</span>,
@@ -4940,12 +5800,12 @@ x = <span class="hljs-number">1</span>;
     <span class="hljs-string">"!=="</span>
 ]
 </code></pre>
-<h5 id="valid">Valid</h5>
+<h5 id="valid-for-mode-true-or">Valid for mode <code>true</code> or <code>[&#39;==&#39;]</code></h5>
 <pre><code class="lang-js"><span class="hljs-keyword">if</span> (<span class="hljs-number">1</span> == a) {
     <span class="hljs-keyword">return</span>
 }
 </code></pre>
-<h5 id="invalid">Invalid</h5>
+<h5 id="invalid-for-mode-true-or">Invalid for mode <code>true</code> or <code>[&#39;==&#39;]</code></h5>
 <pre><code class="lang-js"><span class="hljs-keyword">if</span> (a == <span class="hljs-number">1</span>) {
     <span class="hljs-keyword">return</span>
 }
@@ -4988,6 +5848,40 @@ of the function parameters list</li>
 <pre><code class="lang-js"><span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">thisIs,
           theLongestList,
           ofParametersEverWritten</span>) </span>{}
+</code></pre>
+<h2 id="validatecommentposition">validateCommentPosition</h2>
+<p>This rule is for validating the positioning of line comments. Block comments are ignored.</p>
+<p>Comments that start with the following keywords are also ignored:
+<code>eslint</code>, <code>jshint</code>, <code>jslint</code>, <code>istanbul</code>, <code>global</code>, <code>exported</code>, <code>jscs</code>, <code>falls through</code>
+eg. // jshint strict: true</p>
+<p>Type: <code>Object</code></p>
+<p>Value:</p>
+<ul>
+<li><code>Object</code>:<ul>
+<li><code>position</code>: <code>above</code> or <code>beside</code></li>
+<li><code>allExcept</code>: array of quoted exceptions (comments that start with these values will be excepted)</li>
+</ul>
+</li>
+</ul>
+<h4 id="example">Example</h4>
+<pre><code class="lang-js"><span class="hljs-string">"validateCommentPosition"</span>: { position: <span class="hljs-string">`above`</span>, allExcept: [<span class="hljs-string">`pragma`</span>] }
+</code></pre>
+<h5 id="valid">Valid</h5>
+<pre><code class="lang-js"><span class="hljs-comment">// This is a valid comment</span>
+<span class="hljs-number">1</span> + <span class="hljs-number">1</span>;
+</code></pre>
+<h5 id="invalid">Invalid</h5>
+<pre><code class="lang-js"><span class="hljs-number">1</span> + <span class="hljs-number">1</span>; <span class="hljs-comment">// This is an invalid comment</span>
+<span class="hljs-number">2</span> + <span class="hljs-number">2</span>; <span class="hljs-comment">// pragma (this comment is fine)</span>
+</code></pre>
+<pre><code class="lang-js"><span class="hljs-string">"validateCommentPosition"</span>: { position: <span class="hljs-string">`beside`</span> }
+</code></pre>
+<h5 id="valid">Valid</h5>
+<pre><code class="lang-js"><span class="hljs-number">1</span> + <span class="hljs-number">1</span>; <span class="hljs-comment">// This is a valid comment</span>
+</code></pre>
+<h5 id="invalid">Invalid</h5>
+<pre><code class="lang-js"><span class="hljs-comment">// This is an invalid comment</span>
+<span class="hljs-number">1</span> + <span class="hljs-number">1</span>;
 </code></pre>
 <h2 id="validatenewlineafterarrayelements">validateNewlineAfterArrayElements</h2>
 <p>Requires each element in array on a single line when array length is more than passed maximum

@@ -8,7 +8,7 @@ var DISABLED = 'disabled';
 var jscsRoot = path.resolve(require.resolve('jscs').split('jscs/')[0], './jscs');
 
 var fs = require('./when-fs');
-var processMarkdown = require('./processMarkdown');
+var processMarkdown = require('./jscs/processMarkdown').default;
 
 var config = {
   githubOrganization: 'jscs',

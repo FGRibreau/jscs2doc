@@ -1,11 +1,10 @@
 'use strict';
 
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
 Object.defineProperty(exports, "__esModule", {
     value: true
 });
-
-var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
 exports.default = processMarkdown;
 
 var _markedToc = require('marked-toc');
@@ -26,7 +25,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 
 function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
 
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; } // extracted from https://github.com/jscs-dev/jscs-dev.github.io/blob/2ce5a18dc2ad61c5ebf15586118fcb2291750bf1/app/lib/processMarkdown.jsx
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
 _marked2.default.setOptions({
     highlight: function highlight(code, lang) {
@@ -35,14 +34,9 @@ _marked2.default.setOptions({
 });
 
 function processMarkdown(markdown, callback) {
-    var toc = '\n<!--start_toc-->\n\n' + (0, _markedToc2.default)(markdown, {
-        maxDepth: 2,
-        slugify: generateHeaderAnchor
-    }) + '\n\n<!--end_toc-->\n';
-    var html = (0, _marked2.default)(markdown.replace('<!-- toc -->', toc), {
-        renderer: new RendererReplacement()
-    }, callback);
-    html = html.replace('<!--start_toc-->', '<div class="toc"><div class="toc-header"></div>');
+    var toc = '\n<!--start_toc-->\n\n' + (0, _markedToc2.default)(markdown, { maxDepth: 1, slugify: generateHeaderAnchor }) + '\n\n<!--end_toc-->\n';
+    var html = (0, _marked2.default)(markdown.replace('<!-- toc -->', toc), { renderer: new RendererReplacement() }, callback);
+    html = html.replace('<!--start_toc-->', '<div class="toc"><div class="toc-header">Table of contents:</div>');
     html = html.replace('<!--end_toc-->', '</div>');
     return html;
 }
@@ -122,4 +116,3 @@ function toCharIndex(input) {
         return obj;
     }, {});
 }
-module.exports = exports['default'];
