@@ -111,7 +111,7 @@ module.exports = function (jscsrcPath, readmePath) {
     }
 
     function wrapInTemplate(html) {
-      return '\n<html>\n<head>\n<style>' + require('fs').readFileSync(path.resolve(__dirname, './bundle.css')).toString('utf8') + '</style>\n</head>\n<body>\n<div class="page__content">\n' + html.replace(/\$\$RULE_START\$\$/g, '<div class="rule"><div class="rule-description markdown">').replace(/\$\$RULE_END\$\$/g, '</div></div>') + '\n</div>\n</body>\n</html>\n      ';
+      return '<html>\n<head>\n<style>' + require('fs').readFileSync(path.resolve(__dirname, './bundle.css')).toString('utf8') + '</style>\n</head>\n<body>\n<div class="page__content">\n' + html.replace(/\$\$RULE_START\$\$/g, '<div class="rule"><div class="rule-description markdown">').replace(/\$\$RULE_END\$\$/g, '</div></div>') + '\n</div>\n</body>\n</html>\n      ';
     }
 
     // @todo handle another templates

@@ -8,7 +8,7 @@
   "scripts": {
     "update": "npm run update-parser && npm run build",
     "release": "npm run build && git add dist/* && (git commit -m 'feat(dist)' || true)",
-    "test": "npm run build && cd examples/ && ../bin/jscs2doc -O README.md && cp README.md README.html",
+    "test": "npm run build && cd examples/ && ../bin/jscs2doc -O output.html",
     "start": "./bin/jscs2doc",
     "build": "babel src --presets es2015  --plugins add-module-exports --plugins transform-es2015-modules-commonjs -d dist && cp src/*.css dist/",
     "update-parser": "curl https://raw.githubusercontent.com/jscs-dev/jscs-dev.github.io/dev/app/lib/processMarkdown.jsx > src/processMarkdown.js"
