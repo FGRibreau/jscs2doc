@@ -39,7 +39,7 @@
     "marked": "^0.3.5",
     "marked-toc": "^0.3.0",
     "when": "^3.7.3",
-    "yargs": "^4.6.0"
+    "yargs": "^14.2.0"
   },
   "devDependencies": {
     "babel": "6.5.2",
