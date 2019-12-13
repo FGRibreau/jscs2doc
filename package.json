@@ -36,7 +36,7 @@
     "highlight.js": "^9.3.0",
     "jscs": "^2.1.1",
     "lodash": "^4.10.0",
-    "marked": "^0.3.5",
+    "marked": "^0.8.0",
     "marked-toc": "^0.3.0",
     "when": "^3.7.3",
     "yargs": "^4.6.0"
