@@ -42,7 +42,7 @@
     "yargs": "^4.6.0"
   },
   "devDependencies": {
-    "babel": "6.5.2",
+    "babel": "6.23.0",
     "babel-cli": "6.7.5",
     "babel-plugin-add-module-exports": "0.1.2",
     "babel-plugin-transform-es2015-modules-commonjs": "^6.1.4",
